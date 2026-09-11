@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mkdocs",
+      "runtimeExecutable": "C:\\Users\\Osama\\AppData\\Local\\Programs\\PythonEmbed312\\python.exe",
+      "runtimeArgs": ["-m", "mkdocs", "serve", "-a", "127.0.0.1:8010"],
+      "port": 8010
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+site_name: Osama Shalabi — Cybersecurity Documentation
+site_url: https://doc.osamashalabi.com/
+site_description: >-
+  Personal cybersecurity documentation: enterprise security product
+  deployments, implementation notes, and red teaming research.
+site_author: Osama Shalabi
+copyright: Copyright &copy; Osama Shalabi
+
+repo_name: doc-osamashalabi
+# repo_url: https://github.com/<your-username>/doc-osamashalabi   # set once the repo is pushed
+
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: en
+  - tags
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      title: On this page
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  generator: false
+
+nav:
+- Home: index.md
+- Cyber Security Engineer:
+  - Overview: cyber-security-engineer/index.md
+  - SIEM:
+    - Overview: cyber-security-engineer/siem/index.md
+    - FortiSIEM:
+      - Overview: cyber-security-engineer/siem/fortisiem/index.md
+      - Architecture: cyber-security-engineer/siem/fortisiem/architecture.md
+      - Components: cyber-security-engineer/siem/fortisiem/components.md
+      - Licensing: cyber-security-engineer/siem/fortisiem/licensing.md
+      - Requirements: cyber-security-engineer/siem/fortisiem/requirements.md
+      - Network Requirements:
+        - Overview: cyber-security-engineer/siem/fortisiem/network-requirements/index.md
+        - Ports: cyber-security-engineer/siem/fortisiem/network-requirements/ports.md
+        - DNS: cyber-security-engineer/siem/fortisiem/network-requirements/dns.md
+        - NTP: cyber-security-engineer/siem/fortisiem/network-requirements/ntp.md
+      - Deployment:
+        - Overview: cyber-security-engineer/siem/fortisiem/deployment/index.md
+        - Azure: cyber-security-engineer/siem/fortisiem/deployment/azure.md
+        - VMware: cyber-security-engineer/siem/fortisiem/deployment/vmware.md
+        - Initial Setup: cyber-security-engineer/siem/fortisiem/deployment/initial-setup.md
+      - Configuration:
+        - Overview: cyber-security-engineer/siem/fortisiem/configuration/index.md
+        - EventDB: cyber-security-engineer/siem/fortisiem/configuration/eventdb.md
+        - Collectors: cyber-security-engineer/siem/fortisiem/configuration/collectors.md
+        - Device Discovery: cyber-security-engineer/siem/fortisiem/configuration/device-discovery.md
+        - Syslog: cyber-security-engineer/siem/fortisiem/configuration/syslog.md
+        - Rules: cyber-security-engineer/siem/fortisiem/configuration/rules.md
+        - Notifications: cyber-security-engineer/siem/fortisiem/configuration/notifications.md
+      - Integrations: cyber-security-engineer/siem/fortisiem/integrations.md
+      - Rules & Use Cases: cyber-security-engineer/siem/fortisiem/rules-use-cases.md
+      - Operations:
+        - Overview: cyber-security-engineer/siem/fortisiem/operations/index.md
+        - Health Checks: cyber-security-engineer/siem/fortisiem/operations/health-checks.md
+        - Backup: cyber-security-engineer/siem/fortisiem/operations/backup.md
+        - Upgrade: cyber-security-engineer/siem/fortisiem/operations/upgrade.md
+      - Troubleshooting: cyber-security-engineer/siem/fortisiem/troubleshooting.md
+      - Commands: cyber-security-engineer/siem/fortisiem/commands.md
+      - Labs: cyber-security-engineer/siem/fortisiem/labs.md
+      - References: cyber-security-engineer/siem/fortisiem/references.md
+  - Firewall:
+    - Overview: cyber-security-engineer/firewall/index.md
+    - FortiGate:
+      - Overview: cyber-security-engineer/firewall/fortigate/index.md
+      - Architecture: cyber-security-engineer/firewall/fortigate/architecture.md
+      - Interfaces: cyber-security-engineer/firewall/fortigate/interfaces.md
+      - Routing: cyber-security-engineer/firewall/fortigate/routing.md
+      - Firewall Policies: cyber-security-engineer/firewall/fortigate/firewall-policies.md
+      - Objects: cyber-security-engineer/firewall/fortigate/objects.md
+      - NAT: cyber-security-engineer/firewall/fortigate/nat.md
+      - Security Profiles: cyber-security-engineer/firewall/fortigate/security-profiles.md
+      - IPS: cyber-security-engineer/firewall/fortigate/ips.md
+      - Web Filtering: cyber-security-engineer/firewall/fortigate/web-filtering.md
+      - Application Control: cyber-security-engineer/firewall/fortigate/application-control.md
+      - SSL Inspection: cyber-security-engineer/firewall/fortigate/ssl-inspection.md
+      - IPsec VPN: cyber-security-engineer/firewall/fortigate/ipsec-vpn.md
+      - SSL VPN: cyber-security-engineer/firewall/fortigate/ssl-vpn.md
+      - High Availability: cyber-security-engineer/firewall/fortigate/high-availability.md
+      - SD-WAN: cyber-security-engineer/firewall/fortigate/sd-wan.md
+      - Logging: cyber-security-engineer/firewall/fortigate/logging.md
+      - FortiManager Integration: cyber-security-engineer/firewall/fortigate/fortimanager-integration.md
+      - FortiAnalyzer Integration: cyber-security-engineer/firewall/fortigate/fortianalyzer-integration.md
+      - Troubleshooting: cyber-security-engineer/firewall/fortigate/troubleshooting.md
+      - CLI Commands: cyber-security-engineer/firewall/fortigate/cli-commands.md
+      - Labs: cyber-security-engineer/firewall/fortigate/labs.md
+  - Web Application Firewall:
+    - Overview: cyber-security-engineer/waf/index.md
+    - FortiWeb:
+      - Overview: cyber-security-engineer/waf/fortiweb/index.md
+      - Architecture: cyber-security-engineer/waf/fortiweb/architecture.md
+      - Deployment Modes: cyber-security-engineer/waf/fortiweb/deployment-modes.md
+      - Protected Servers: cyber-security-engineer/waf/fortiweb/protected-servers.md
+      - Policies: cyber-security-engineer/waf/fortiweb/policies.md
+      - Signatures & Rules: cyber-security-engineer/waf/fortiweb/signatures-rules.md
+      - Bot Mitigation: cyber-security-engineer/waf/fortiweb/bot-mitigation.md
+      - API Protection: cyber-security-engineer/waf/fortiweb/api-protection.md
+      - SSL / Certificates: cyber-security-engineer/waf/fortiweb/ssl-certificates.md
+      - Logging & Reporting: cyber-security-engineer/waf/fortiweb/logging-reporting.md
+      - High Availability: cyber-security-engineer/waf/fortiweb/high-availability.md
+      - Troubleshooting: cyber-security-engineer/waf/fortiweb/troubleshooting.md
+      - Commands: cyber-security-engineer/waf/fortiweb/commands.md
+      - Labs: cyber-security-engineer/waf/fortiweb/labs.md
+      - References: cyber-security-engineer/waf/fortiweb/references.md
+  - Endpoint Detection & Response:
+    - Overview: cyber-security-engineer/edr/index.md
+    - FortiEDR:
+      - Overview: cyber-security-engineer/edr/fortiedr/index.md
+      - Architecture: cyber-security-engineer/edr/fortiedr/architecture.md
+      - Deployment: cyber-security-engineer/edr/fortiedr/deployment.md
+      - Collectors / Agents: cyber-security-engineer/edr/fortiedr/collectors-agents.md
+      - Policies: cyber-security-engineer/edr/fortiedr/policies.md
+      - Playbooks: cyber-security-engineer/edr/fortiedr/playbooks.md
+      - Threat Hunting: cyber-security-engineer/edr/fortiedr/threat-hunting.md
+      - Incident Response: cyber-security-engineer/edr/fortiedr/response.md
+      - Integrations: cyber-security-engineer/edr/fortiedr/integrations.md
+      - Troubleshooting: cyber-security-engineer/edr/fortiedr/troubleshooting.md
+      - Commands: cyber-security-engineer/edr/fortiedr/commands.md
+      - Labs: cyber-security-engineer/edr/fortiedr/labs.md
+      - References: cyber-security-engineer/edr/fortiedr/references.md
+  - Security Management:
+    - Overview: cyber-security-engineer/security-management/index.md
+    - FortiManager:
+      - Overview: cyber-security-engineer/security-management/fortimanager/index.md
+      - Architecture: cyber-security-engineer/security-management/fortimanager/architecture.md
+      - Deployment: cyber-security-engineer/security-management/fortimanager/deployment.md
+      - Device Management: cyber-security-engineer/security-management/fortimanager/device-management.md
+      - Policy Packages: cyber-security-engineer/security-management/fortimanager/policy-packages.md
+      - ADOMs: cyber-security-engineer/security-management/fortimanager/adoms.md
+      - Firmware Management: cyber-security-engineer/security-management/fortimanager/firmware-management.md
+      - Troubleshooting: cyber-security-engineer/security-management/fortimanager/troubleshooting.md
+      - Commands: cyber-security-engineer/security-management/fortimanager/commands.md
+      - Labs: cyber-security-engineer/security-management/fortimanager/labs.md
+      - References: cyber-security-engineer/security-management/fortimanager/references.md
+    - FortiAnalyzer:
+      - Overview: cyber-security-engineer/security-management/fortianalyzer/index.md
+      - Architecture: cyber-security-engineer/security-management/fortianalyzer/architecture.md
+      - Deployment: cyber-security-engineer/security-management/fortianalyzer/deployment.md
+      - Log Management: cyber-security-engineer/security-management/fortianalyzer/log-management.md
+      - Reports: cyber-security-engineer/security-management/fortianalyzer/reports.md
+      - Event Handlers: cyber-security-engineer/security-management/fortianalyzer/event-handlers.md
+      - Troubleshooting: cyber-security-engineer/security-management/fortianalyzer/troubleshooting.md
+      - Commands: cyber-security-engineer/security-management/fortianalyzer/commands.md
+      - Labs: cyber-security-engineer/security-management/fortianalyzer/labs.md
+      - References: cyber-security-engineer/security-management/fortianalyzer/references.md
+  - Patch Management:
+    - Overview: cyber-security-engineer/patch-management/index.md
+    - Ivanti Patch Management:
+      - Overview: cyber-security-engineer/patch-management/ivanti/index.md
+      - Architecture: cyber-security-engineer/patch-management/ivanti/architecture.md
+      - Agents: cyber-security-engineer/patch-management/ivanti/agents.md
+      - Cloud Platform: cyber-security-engineer/patch-management/ivanti/cloud-platform.md
+      - Network Connectivity: cyber-security-engineer/patch-management/ivanti/network-connectivity.md
+      - Deployment Methods: cyber-security-engineer/patch-management/ivanti/deployment-methods.md
+      - Patching Workflow: cyber-security-engineer/patch-management/ivanti/patching-workflow.md
+      - Policies & Rings: cyber-security-engineer/patch-management/ivanti/policies-rings.md
+      - Third-Party Application Patching: cyber-security-engineer/patch-management/ivanti/third-party-patching.md
+      - Reporting: cyber-security-engineer/patch-management/ivanti/reporting.md
+      - Operations: cyber-security-engineer/patch-management/ivanti/operations.md
+      - Troubleshooting: cyber-security-engineer/patch-management/ivanti/troubleshooting.md
+      - Commands: cyber-security-engineer/patch-management/ivanti/commands.md
+      - Labs: cyber-security-engineer/patch-management/ivanti/labs.md
+      - References: cyber-security-engineer/patch-management/ivanti/references.md
+  - Privileged Access Management:
+    - Overview: cyber-security-engineer/pam/index.md
+    - One Identity PAM:
+      - Overview: cyber-security-engineer/pam/one-identity/index.md
+      - Architecture: cyber-security-engineer/pam/one-identity/architecture.md
+      - Vaulting: cyber-security-engineer/pam/one-identity/vaulting.md
+      - Privileged Accounts: cyber-security-engineer/pam/one-identity/privileged-accounts.md
+      - Session Management: cyber-security-engineer/pam/one-identity/session-management.md
+      - Policies: cyber-security-engineer/pam/one-identity/policies.md
+      - Password Rotation: cyber-security-engineer/pam/one-identity/password-rotation.md
+      - Discovery: cyber-security-engineer/pam/one-identity/discovery.md
+      - Integrations: cyber-security-engineer/pam/one-identity/integrations.md
+      - Deployment: cyber-security-engineer/pam/one-identity/deployment.md
+      - Operations: cyber-security-engineer/pam/one-identity/operations.md
+      - Troubleshooting: cyber-security-engineer/pam/one-identity/troubleshooting.md
+      - Commands: cyber-security-engineer/pam/one-identity/commands.md
+      - Labs: cyber-security-engineer/pam/one-identity/labs.md
+      - References: cyber-security-engineer/pam/one-identity/references.md
+    - Delinea PAM:
+      - Overview: cyber-security-engineer/pam/delinea/index.md
+      - Architecture: cyber-security-engineer/pam/delinea/architecture.md
+      - Vaulting: cyber-security-engineer/pam/delinea/vaulting.md
+      - Privileged Accounts: cyber-security-engineer/pam/delinea/privileged-accounts.md
+      - Session Management: cyber-security-engineer/pam/delinea/session-management.md
+      - Policies: cyber-security-engineer/pam/delinea/policies.md
+      - Password Rotation: cyber-security-engineer/pam/delinea/password-rotation.md
+      - Discovery: cyber-security-engineer/pam/delinea/discovery.md
+      - Integrations: cyber-security-engineer/pam/delinea/integrations.md
+      - Deployment: cyber-security-engineer/pam/delinea/deployment.md
+      - Operations: cyber-security-engineer/pam/delinea/operations.md
+      - Troubleshooting: cyber-security-engineer/pam/delinea/troubleshooting.md
+      - Commands: cyber-security-engineer/pam/delinea/commands.md
+      - Labs: cyber-security-engineer/pam/delinea/labs.md
+      - References: cyber-security-engineer/pam/delinea/references.md
+  - Cloud:
+    - Overview: cyber-security-engineer/cloud/index.md
+    - Microsoft Azure:
+      - Overview: cyber-security-engineer/cloud/azure/index.md
+      - Fundamentals: cyber-security-engineer/cloud/azure/fundamentals.md
+      - Identity & Entra ID: cyber-security-engineer/cloud/azure/identity-entra-id.md
+      - Networking:
+        - Overview: cyber-security-engineer/cloud/azure/networking/index.md
+        - Virtual Networks: cyber-security-engineer/cloud/azure/networking/virtual-networks.md
+        - NSGs: cyber-security-engineer/cloud/azure/networking/nsgs.md
+      - Compute: cyber-security-engineer/cloud/azure/compute.md
+      - Storage: cyber-security-engineer/cloud/azure/storage.md
+      - Monitoring: cyber-security-engineer/cloud/azure/monitoring.md
+      - Security & Defender: cyber-security-engineer/cloud/azure/security-defender.md
+      - Logging: cyber-security-engineer/cloud/azure/logging.md
+      - Architecture: cyber-security-engineer/cloud/azure/architecture.md
+      - Deployments: cyber-security-engineer/cloud/azure/deployments.md
+      - CLI / PowerShell: cyber-security-engineer/cloud/azure/cli-powershell.md
+      - Troubleshooting: cyber-security-engineer/cloud/azure/troubleshooting.md
+      - Labs: cyber-security-engineer/cloud/azure/labs.md
+    - AWS:
+      - Overview: cyber-security-engineer/cloud/aws/index.md
+      - Fundamentals: cyber-security-engineer/cloud/aws/fundamentals.md
+      - IAM: cyber-security-engineer/cloud/aws/iam.md
+      - Networking & VPC: cyber-security-engineer/cloud/aws/networking-vpc.md
+      - EC2: cyber-security-engineer/cloud/aws/ec2.md
+      - S3: cyber-security-engineer/cloud/aws/s3.md
+      - CloudTrail: cyber-security-engineer/cloud/aws/cloudtrail.md
+      - CloudWatch: cyber-security-engineer/cloud/aws/cloudwatch.md
+      - Security: cyber-security-engineer/cloud/aws/security.md
+      - Architecture: cyber-security-engineer/cloud/aws/architecture.md
+      - Deployments: cyber-security-engineer/cloud/aws/deployments.md
+      - CLI: cyber-security-engineer/cloud/aws/cli.md
+      - Troubleshooting: cyber-security-engineer/cloud/aws/troubleshooting.md
+      - Labs: cyber-security-engineer/cloud/aws/labs.md
+- Red Teaming:
+  - Overview: red-teaming/index.md
+  - AI Red Teaming:
+    - Overview: red-teaming/ai-red-teaming/index.md
+    - Fundamentals: red-teaming/ai-red-teaming/fundamentals.md
+    - LLM Security: red-teaming/ai-red-teaming/llm-security.md
+    - Threat Modeling: red-teaming/ai-red-teaming/threat-modeling.md
+    - Prompt Injection: red-teaming/ai-red-teaming/prompt-injection.md
+    - Indirect Prompt Injection: red-teaming/ai-red-teaming/indirect-prompt-injection.md
+    - Jailbreaking: red-teaming/ai-red-teaming/jailbreaking.md
+    - RAG Attacks: red-teaming/ai-red-teaming/rag-attacks.md
+    - Agent Security: red-teaming/ai-red-teaming/agent-security.md
+    - Tool Abuse: red-teaming/ai-red-teaming/tool-abuse.md
+    - Data Exfiltration: red-teaming/ai-red-teaming/data-exfiltration.md
+    - Model Attacks: red-teaming/ai-red-teaming/model-attacks.md
+    - AI Application Testing Methodology: red-teaming/ai-red-teaming/testing-methodology.md
+    - OWASP LLM Top 10: red-teaming/ai-red-teaming/owasp-llm-top-10.md
+    - Labs: red-teaming/ai-red-teaming/labs.md
+    - Tools: red-teaming/ai-red-teaming/tools.md
+    - References: red-teaming/ai-red-teaming/references.md
+  - Web Hacking:
+    - Overview: red-teaming/web-hacking/index.md
+    - Methodology: red-teaming/web-hacking/methodology.md
+    - Reconnaissance: red-teaming/web-hacking/reconnaissance.md
+    - Information Gathering: red-teaming/web-hacking/information-gathering.md
+    - Authentication: red-teaming/web-hacking/authentication.md
+    - Authorization: red-teaming/web-hacking/authorization.md
+    - Session Management: red-teaming/web-hacking/session-management.md
+    - SQL Injection: red-teaming/web-hacking/sql-injection.md
+    - XSS: red-teaming/web-hacking/xss.md
+    - SSRF: red-teaming/web-hacking/ssrf.md
+    - XXE: red-teaming/web-hacking/xxe.md
+    - File Upload: red-teaming/web-hacking/file-upload.md
+    - Path Traversal: red-teaming/web-hacking/path-traversal.md
+    - Command Injection: red-teaming/web-hacking/command-injection.md
+    - APIs: red-teaming/web-hacking/apis.md
+    - OAuth: red-teaming/web-hacking/oauth.md
+    - JWT: red-teaming/web-hacking/jwt.md
+    - Business Logic: red-teaming/web-hacking/business-logic.md
+    - Race Conditions: red-teaming/web-hacking/race-conditions.md
+    - WebSockets: red-teaming/web-hacking/websockets.md
+    - GraphQL: red-teaming/web-hacking/graphql.md
+    - Tools: red-teaming/web-hacking/tools.md
+    - Labs: red-teaming/web-hacking/labs.md
+    - Cheatsheets: red-teaming/web-hacking/cheatsheets.md
+    - References: red-teaming/web-hacking/references.md
+  - OS Hacking:
+    - Overview: red-teaming/os-hacking/index.md
+    - Linux:
+      - Overview: red-teaming/os-hacking/linux/index.md
+      - Enumeration: red-teaming/os-hacking/linux/enumeration.md
+      - Local Enumeration: red-teaming/os-hacking/linux/local-enumeration.md
+      - Privilege Escalation: red-teaming/os-hacking/linux/privilege-escalation.md
+      - Credentials: red-teaming/os-hacking/linux/credentials.md
+      - Persistence: red-teaming/os-hacking/linux/persistence.md
+      - Services & Processes: red-teaming/os-hacking/linux/services-processes.md
+      - File Permissions: red-teaming/os-hacking/linux/file-permissions.md
+      - Scheduled Tasks: red-teaming/os-hacking/linux/scheduled-tasks.md
+      - SUID: red-teaming/os-hacking/linux/suid.md
+      - Capabilities: red-teaming/os-hacking/linux/capabilities.md
+      - Networking: red-teaming/os-hacking/linux/networking.md
+      - Post-Exploitation: red-teaming/os-hacking/linux/post-exploitation.md
+      - Tools: red-teaming/os-hacking/linux/tools.md
+      - Labs: red-teaming/os-hacking/linux/labs.md
+      - Cheatsheets: red-teaming/os-hacking/linux/cheatsheets.md
+    - Windows:
+      - Overview: red-teaming/os-hacking/windows/index.md
+      - Enumeration: red-teaming/os-hacking/windows/enumeration.md
+      - Local Enumeration: red-teaming/os-hacking/windows/local-enumeration.md
+      - Privilege Escalation: red-teaming/os-hacking/windows/privilege-escalation.md
+      - Credentials: red-teaming/os-hacking/windows/credentials.md
+      - Persistence: red-teaming/os-hacking/windows/persistence.md
+      - Windows Services: red-teaming/os-hacking/windows/services.md
+      - Registry: red-teaming/os-hacking/windows/registry.md
+      - PowerShell: red-teaming/os-hacking/windows/powershell.md
+      - Credential Access: red-teaming/os-hacking/windows/credential-access.md
+      - Networking: red-teaming/os-hacking/windows/networking.md
+      - Post-Exploitation: red-teaming/os-hacking/windows/post-exploitation.md
+      - Tools: red-teaming/os-hacking/windows/tools.md
+      - Labs: red-teaming/os-hacking/windows/labs.md
+      - Cheatsheets: red-teaming/os-hacking/windows/cheatsheets.md
