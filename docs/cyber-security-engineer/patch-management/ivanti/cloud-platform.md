@@ -1,6 +1,10 @@
 # Ivanti Patch Management — Cloud Platform
 
-!!! note "Placeholder"
-    This page has not been written yet. Verified content (architecture details, requirements, commands, screenshots, configuration steps) will be added here from official vendor documentation and first-hand lab/deployment notes.
+## Cloud workflow
 
-**Planned scope:** Cloud Platform for Ivanti Patch Management.
+The cloud workflow is the primary workflow for performing patch management. The split is:
+
+- **All configuration and assessment activities are performed within the cloud** (Ivanti Neurons) — this is where policies and patch configurations are created and managed.
+- **The actual scans and deployments are performed by agents** installed on the managed devices.
+
+So the cloud platform decides *what* should happen (policy, patch selection), and the [agent](agents.md) on each endpoint is what actually carries it out and reports back. See [Patching Workflow](patching-workflow.md) for the full step sequence.

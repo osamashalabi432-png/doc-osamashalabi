@@ -1,6 +1,8 @@
 # Ivanti Patch Management — Overview
 
-!!! note "Placeholder"
-    This page has not been written yet. Verified content (architecture details, requirements, commands, screenshots, configuration steps) will be added here from official vendor documentation and first-hand lab/deployment notes.
+Ivanti Neurons for Patch Management is a **cloud patching** solution: policy and patch-configuration decisions are made centrally in the cloud, while the actual scanning and patch deployment happen locally via agents installed on the managed devices.
 
-**Planned scope:** What Ivanti Patch Management is, why it's used, and how it fits into enterprise patch and vulnerability remediation.
+!!! note
+    The source notes describe it as having three defining characteristics but don't enumerate what they are — not repeated here to avoid guessing at them.
+
+See [Cloud Platform](cloud-platform.md) for how the cloud/agent split works, and [Patching Workflow](patching-workflow.md) for the end-to-end process from policy to reported results.

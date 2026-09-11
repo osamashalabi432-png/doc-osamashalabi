@@ -1,6 +1,3 @@
 # FortiWeb — References
 
-!!! note "Placeholder"
-    This page has not been written yet. Verified content (architecture details, requirements, commands, screenshots, configuration steps) will be added here from official vendor documentation and first-hand lab/deployment notes.
-
-**Planned scope:** References for FortiWeb.
+- [Solutions for specific web attacks](https://help.fortinet.com/fweb/571/Content/FortiWeb/fortiweb-admin/solutions_for_specific.htm) — official Fortinet documentation covering common web attacks and how FortiWeb mitigates each one.

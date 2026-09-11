@@ -159,6 +159,10 @@ nav:
       - Troubleshooting: cyber-security-engineer/firewall/fortigate/troubleshooting.md
       - CLI Commands: cyber-security-engineer/firewall/fortigate/cli-commands.md
       - Labs: cyber-security-engineer/firewall/fortigate/labs.md
+    - Palo Alto:
+      - Overview: cyber-security-engineer/firewall/palo-alto/index.md
+      - SASE: cyber-security-engineer/firewall/palo-alto/sase.md
+      - WildFire: cyber-security-engineer/firewall/palo-alto/wildfire.md
   - Web Application Firewall:
     - Overview: cyber-security-engineer/waf/index.md
     - FortiWeb:
@@ -193,6 +197,8 @@ nav:
       - Commands: cyber-security-engineer/edr/fortiedr/commands.md
       - Labs: cyber-security-engineer/edr/fortiedr/labs.md
       - References: cyber-security-engineer/edr/fortiedr/references.md
+    - TrendMicro:
+      - Overview: cyber-security-engineer/edr/trendmicro/index.md
   - Security Management:
     - Overview: cyber-security-engineer/security-management/index.md
     - FortiManager:
@@ -218,6 +224,8 @@ nav:
       - Commands: cyber-security-engineer/security-management/fortianalyzer/commands.md
       - Labs: cyber-security-engineer/security-management/fortianalyzer/labs.md
       - References: cyber-security-engineer/security-management/fortianalyzer/references.md
+    - AlgoSec:
+      - Overview: cyber-security-engineer/security-management/algosec/index.md
   - Patch Management:
     - Overview: cyber-security-engineer/patch-management/index.md
     - Ivanti Patch Management:
@@ -272,6 +280,7 @@ nav:
       - References: cyber-security-engineer/pam/delinea/references.md
   - Cloud:
     - Overview: cyber-security-engineer/cloud/index.md
+    - Security Concepts: cyber-security-engineer/cloud/security-concepts.md
     - Microsoft Azure:
       - Overview: cyber-security-engineer/cloud/azure/index.md
       - Fundamentals: cyber-security-engineer/cloud/azure/fundamentals.md
@@ -305,6 +314,89 @@ nav:
       - CLI: cyber-security-engineer/cloud/aws/cli.md
       - Troubleshooting: cyber-security-engineer/cloud/aws/troubleshooting.md
       - Labs: cyber-security-engineer/cloud/aws/labs.md
+  - Virtualization & Containers:
+    - Overview: cyber-security-engineer/virtualization-containers/index.md
+    - Concepts: cyber-security-engineer/virtualization-containers/concepts.md
+    - Docker:
+      - Overview: cyber-security-engineer/virtualization-containers/docker/index.md
+      - Commands: cyber-security-engineer/virtualization-containers/docker/commands.md
+      - Security: cyber-security-engineer/virtualization-containers/docker/security.md
+      - Hardening: cyber-security-engineer/virtualization-containers/docker/hardening.md
+      - Tools: cyber-security-engineer/virtualization-containers/docker/tools.md
+    - Podman:
+      - Overview: cyber-security-engineer/virtualization-containers/podman/index.md
+      - Commands: cyber-security-engineer/virtualization-containers/podman/commands.md
+      - Migration: cyber-security-engineer/virtualization-containers/podman/migration.md
+      - Networking: cyber-security-engineer/virtualization-containers/podman/networking.md
+      - Pods: cyber-security-engineer/virtualization-containers/podman/pods.md
+    - Kubernetes:
+      - Overview: cyber-security-engineer/virtualization-containers/kubernetes/index.md
+      - Basics: cyber-security-engineer/virtualization-containers/kubernetes/basics.md
+  - Web Server:
+    - Overview: cyber-security-engineer/web-server/index.md
+    - Nginx:
+      - Overview: cyber-security-engineer/web-server/nginx/index.md
+      - Configuration: cyber-security-engineer/web-server/nginx/configuration.md
+  - Application Security:
+    - Overview: cyber-security-engineer/application-security/index.md
+    - Secure SDLC: cyber-security-engineer/application-security/secure-sdlc/index.md
+  - Security Operations:
+    - Overview: cyber-security-engineer/security-operations/index.md
+    - Alert Management: cyber-security-engineer/security-operations/alert-management.md
+    - Disaster Recovery: cyber-security-engineer/security-operations/disaster-recovery.md
+  - Email Security:
+    - Overview: cyber-security-engineer/email-security/index.md
+    - Proofpoint:
+      - Overview: cyber-security-engineer/email-security/proofpoint/index.md
+      - Configuration: cyber-security-engineer/email-security/proofpoint/configuration.md
+      - Dashboard: cyber-security-engineer/email-security/proofpoint/dashboard.md
+      - Email Flow: cyber-security-engineer/email-security/proofpoint/email-flow.md
+      - Digest: cyber-security-engineer/email-security/proofpoint/digest.md
+      - Operations: cyber-security-engineer/email-security/proofpoint/operations.md
+    - Symantec:
+      - Overview: cyber-security-engineer/email-security/symantec/index.md
+      - Email Fundamentals: cyber-security-engineer/email-security/symantec/email-fundamentals.md
+      - Email Security Detection: cyber-security-engineer/email-security/symantec/email-security-detection.md
+  - Data Loss Prevention:
+    - Overview: cyber-security-engineer/data-loss-prevention/index.md
+    - Data Patrol: cyber-security-engineer/data-loss-prevention/data-patrol/index.md
+    - FORTRA: cyber-security-engineer/data-loss-prevention/fortra/index.md
+  - Hardening Guides:
+    - Overview: cyber-security-engineer/hardening-guides/index.md
+    - Linux:
+      - Overview: cyber-security-engineer/hardening-guides/linux/index.md
+      - Physical Security: cyber-security-engineer/hardening-guides/linux/physical-security.md
+      - Filesystem Encryption: cyber-security-engineer/hardening-guides/linux/filesystem-encryption.md
+      - Firewall: cyber-security-engineer/hardening-guides/linux/firewall.md
+      - Remote Access (SSH): cyber-security-engineer/hardening-guides/linux/remote-access-ssh.md
+      - User Accounts: cyber-security-engineer/hardening-guides/linux/user-accounts.md
+      - Updates: cyber-security-engineer/hardening-guides/linux/updates.md
+      - Audit & Logging: cyber-security-engineer/hardening-guides/linux/audit-logging.md
+    - Windows:
+      - Overview: cyber-security-engineer/hardening-guides/windows/index.md
+      - General Concepts: cyber-security-engineer/hardening-guides/windows/general-concepts.md
+      - Identity & Access: cyber-security-engineer/hardening-guides/windows/identity-access.md
+      - Network Management: cyber-security-engineer/hardening-guides/windows/network-management.md
+      - Application Management: cyber-security-engineer/hardening-guides/windows/application-management.md
+      - Storage Management: cyber-security-engineer/hardening-guides/windows/storage-management.md
+      - Updating Windows: cyber-security-engineer/hardening-guides/windows/updating-windows.md
+    - Active Directory:
+      - Overview: cyber-security-engineer/hardening-guides/active-directory/index.md
+      - General Concepts: cyber-security-engineer/hardening-guides/active-directory/general-concepts.md
+      - Authentication: cyber-security-engineer/hardening-guides/active-directory/authentication.md
+      - Least Privilege & Tiering: cyber-security-engineer/hardening-guides/active-directory/least-privilege-tiering.md
+      - Security Baselines: cyber-security-engineer/hardening-guides/active-directory/security-baselines.md
+      - Known Attacks: cyber-security-engineer/hardening-guides/active-directory/known-attacks.md
+    - Network Devices:
+      - Overview: cyber-security-engineer/hardening-guides/network-devices/index.md
+      - General Techniques: cyber-security-engineer/hardening-guides/network-devices/general-techniques.md
+      - VPN Hardening: cyber-security-engineer/hardening-guides/network-devices/vpn-hardening.md
+      - Routers, Switches & Firewalls: cyber-security-engineer/hardening-guides/network-devices/routers-switches-firewalls.md
+      - Monitoring Tools: cyber-security-engineer/hardening-guides/network-devices/monitoring-tools.md
+    - FortiSIEM Hardening:
+      - Overview: cyber-security-engineer/hardening-guides/fortisiem/index.md
+      - OS Security: cyber-security-engineer/hardening-guides/fortisiem/os-security.md
+      - Network Security: cyber-security-engineer/hardening-guides/fortisiem/network-security.md
 - Red Teaming:
   - Overview: red-teaming/index.md
   - AI Red Teaming:
@@ -330,6 +422,7 @@ nav:
     - Methodology: red-teaming/web-hacking/methodology.md
     - Reconnaissance: red-teaming/web-hacking/reconnaissance.md
     - Information Gathering: red-teaming/web-hacking/information-gathering.md
+    - Scanning & Enumeration: red-teaming/web-hacking/scanning-enumeration.md
     - Authentication: red-teaming/web-hacking/authentication.md
     - Authorization: red-teaming/web-hacking/authorization.md
     - Session Management: red-teaming/web-hacking/session-management.md
@@ -340,6 +433,8 @@ nav:
     - File Upload: red-teaming/web-hacking/file-upload.md
     - Path Traversal: red-teaming/web-hacking/path-traversal.md
     - Command Injection: red-teaming/web-hacking/command-injection.md
+    - Shells: red-teaming/web-hacking/shells.md
+    - Credential Attacks: red-teaming/web-hacking/credential-attacks.md
     - APIs: red-teaming/web-hacking/apis.md
     - OAuth: red-teaming/web-hacking/oauth.md
     - JWT: red-teaming/web-hacking/jwt.md
@@ -358,6 +453,7 @@ nav:
       - Enumeration: red-teaming/os-hacking/linux/enumeration.md
       - Local Enumeration: red-teaming/os-hacking/linux/local-enumeration.md
       - Privilege Escalation: red-teaming/os-hacking/linux/privilege-escalation.md
+      - CVE Writeups: red-teaming/os-hacking/linux/cve-writeups.md
       - Credentials: red-teaming/os-hacking/linux/credentials.md
       - Persistence: red-teaming/os-hacking/linux/persistence.md
       - Services & Processes: red-teaming/os-hacking/linux/services-processes.md
@@ -374,6 +470,7 @@ nav:
       - Overview: red-teaming/os-hacking/windows/index.md
       - Enumeration: red-teaming/os-hacking/windows/enumeration.md
       - Local Enumeration: red-teaming/os-hacking/windows/local-enumeration.md
+      - Active Directory: red-teaming/os-hacking/windows/active-directory.md
       - Privilege Escalation: red-teaming/os-hacking/windows/privilege-escalation.md
       - Credentials: red-teaming/os-hacking/windows/credentials.md
       - Persistence: red-teaming/os-hacking/windows/persistence.md

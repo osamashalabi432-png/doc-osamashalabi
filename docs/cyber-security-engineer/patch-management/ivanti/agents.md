@@ -1,6 +1,3 @@
 # Ivanti Patch Management — Agents
 
-!!! note "Placeholder"
-    This page has not been written yet. Verified content (architecture details, requirements, commands, screenshots, configuration steps) will be added here from official vendor documentation and first-hand lab/deployment notes.
-
-**Planned scope:** Agents for Ivanti Patch Management.
+Agent devices are the managed endpoints that actually run the patching work. In the cloud workflow, policy and patch configuration are defined centrally in Ivanti Neurons, and it's the agent on each device that scans for applicable patches, deploys them, and reports the results back to Ivanti Neurons — see [Cloud Platform](cloud-platform.md) and [Patching Workflow](patching-workflow.md) for where this fits in the overall sequence.

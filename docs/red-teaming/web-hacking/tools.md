@@ -1,6 +1,10 @@
 # Web Hacking — Tools
 
-!!! note "Placeholder"
-    This page has not been written yet. Verified content (architecture details, requirements, commands, screenshots, configuration steps) will be added here from official vendor documentation and first-hand lab/deployment notes.
+!!! warning "Authorized testing only"
+    These are personal notes from authorized labs, CTFs, and bug-bounty programs.
 
-**Planned scope:** Tools content for web application penetration testing.
+## Post-exploitation / privilege escalation reference
+
+- [GTFOBins](https://gtfobins.github.io/) — one of the best resources for privilege escalation: a curated list of Unix binaries that can be abused to bypass local security restrictions, spawn shells, read/write files, and more, once a foothold is established.
+
+For per-service enumeration/scanning tools (Metasploit auxiliary modules, hash-identifier, BackupFinder, sublist3r, etc.), see [Scanning & Enumeration](scanning-enumeration.md), [Information Gathering](information-gathering.md), and [Credential Attacks](credential-attacks.md).

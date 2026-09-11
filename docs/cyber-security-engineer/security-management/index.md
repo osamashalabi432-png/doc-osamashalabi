@@ -6,3 +6,4 @@ Centralized management, policy, and analytics platforms.
 |---|---|
 | [FortiManager](fortimanager/index.md) | Centralized management for Fortinet devices. |
 | [FortiAnalyzer](fortianalyzer/index.md) | Centralized logging and analytics for Fortinet devices. |
+| [AlgoSec](algosec/index.md) | Firewall and security policy management platform. |
