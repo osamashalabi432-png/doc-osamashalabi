@@ -83,7 +83,7 @@ flowchart TD
     C --> D["python3.8 cap_setuid<br>privesc to root"]
 ```
 
-- **IDOR** (an unauthenticated, sequential-ID download endpoint — see the Web-Hacking [Authorization](../../web-hacking/authorization.md) section for the access-control technique) exposes a pre-seeded demo pcap containing plaintext credentials — that's the foothold, not the win.
+- **IDOR** (an unauthenticated, sequential-ID download endpoint — an access-control weakness) exposes a pre-seeded demo pcap containing plaintext credentials — that's the foothold, not the win.
 - **capability abuse** (see [Capabilities → `cap_setuid` on python3.8](capabilities.md#linux-capability-abuse-cap_setuid-on-python38)) is what turns that foothold into root, via a leftover `cap_setuid` grant on the system Python interpreter.
 
 **Full step-by-step walkthrough:**

@@ -9,7 +9,7 @@ A penetration test is not "just start hacking" — it's a repeatable sequence of
 
 1. **Reconnaissance** — passive and active information gathering about the target (see [Reconnaissance](reconnaissance.md) and [Information Gathering](information-gathering.md)).
 2. **Scanning and enumeration** — identify live hosts, open ports, and running services in detail, using tools like Nmap, Nessus, and Nikto (see [Scanning & Enumeration](scanning-enumeration.md)).
-3. **Gain Access** — exploit a discovered weakness to get a foothold (see the vulnerability-class pages, e.g. [File Upload](file-upload.md), [SQL Injection](sql-injection.md)).
+3. **Gain Access** — exploit a discovered weakness to get a foothold (see the vulnerability-class pages, e.g. [File Upload](file-upload.md)).
 4. **Maintaining access** — keep a way back into the system after the initial foothold.
 5. **Covering tracks** — clean up evidence of the test activity.
 
