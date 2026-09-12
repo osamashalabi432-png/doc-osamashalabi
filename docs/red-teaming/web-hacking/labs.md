@@ -1,8 +1,5 @@
 # Web Hacking — Labs
 
-!!! warning "Authorized lab material only"
-    These are personal writeups from authorized HTB/THM machines and a bug-bounty program (Udemy), used for learning. Never run these techniques against systems you don't own or have written permission to test.
-
 ## Butler
 
 > Nmap enumeration finds a Jenkins login page; Burp Suite brute-forces valid credentials; Jenkins' script console is then abused to get code execution and a reverse shell.

@@ -1,8 +1,5 @@
 # Linux — Services & Processes
 
-!!! warning "Authorized lab material only"
-    Techniques below were exercised against authorized HTB/CTF targets during study. Never run against systems you don't own or have written permission to test.
-
 ## Finding root-owned processes with exposed debug/admin ports
 
 - **In plain terms:** some services (monitoring tools, language debuggers, admin panels) run as root but bind a control interface that has no authentication of its own — it only "protects" itself by being on localhost. Any local user, even unprivileged, can reach that interface and use it to make the root process do things on their behalf.

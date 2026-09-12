@@ -1,8 +1,5 @@
 # Linux — Capabilities
 
-!!! warning "Authorized lab material only"
-    Techniques below were exercised against authorized HTB/CTF targets. Never run against systems you don't own or have written permission to test.
-
 ## Linux capability abuse — `cap_setuid` on python3.8
 
 - **In plain terms:** Linux "capabilities" split up root's power into individual pieces (e.g. binding to a low port, reading raw network packets) so a program can get exactly one root-level power without being fully root. `cap_setuid` is the power to become *any* user, including root — so if it's mistakenly granted to a general-purpose program like the Python interpreter, anyone who can run Python on the box can just ask to become root, no exploit code needed.

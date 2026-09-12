@@ -1,8 +1,5 @@
 # Linux — Privilege Escalation
 
-!!! warning "Authorized lab material only"
-    Techniques below were exercised against authorized HTB/CTF targets during study. Never run against systems you don't own or have written permission to test.
-
 ## Root process abuse via Node.js Inspector protocol
 
 - **In plain terms:** Node.js has a built-in remote debugger (the "Inspector" / V8 debug protocol). If a Node process is started with that debugger enabled and running as `root`, anyone who can reach the debug port can attach and run arbitrary commands *as root* — the debugger was never designed to be a security boundary.

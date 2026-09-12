@@ -1,8 +1,5 @@
 # Web Hacking — Reconnaissance
 
-!!! warning "Authorized testing only"
-    These are personal notes from authorized labs, CTFs, and bug-bounty programs. Only run recon against domains/hosts you own or have explicit written permission to test.
-
 Reconnaissance is the information-gathering phase before any active testing — the goal is to build a picture of the target (who owns it, what it runs, where it's exposed) without necessarily touching it yet. It's split into **passive** recon (no direct interaction that the target could notice) and **active** recon (direct interaction, like port scans, that the target's logs/IDS could see).
 
 For the specific tools used to enumerate subdomains, fingerprint technology, and check breach data, see [Information Gathering](information-gathering.md). This page covers the overall recon workflow, target validation, DNS/host discovery, and Google dorking.

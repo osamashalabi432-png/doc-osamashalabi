@@ -1,8 +1,5 @@
 # Web Hacking — Scanning & Enumeration
 
-!!! warning "Authorized testing only"
-    These are personal notes from authorized labs, CTFs (HTB/THM), and bug-bounty programs. Only run these scans against hosts you own or have explicit written permission to test.
-
 Scanning and enumeration is the phase after basic recon where we go service-by-service: once a port is known to be open (from [Reconnaissance](reconnaissance.md)), the goal here is to find out exactly *what* is listening on it, *which version*, and whether it can be enumerated or brute-forced further. Most of the workflow below is built around Metasploit's `auxiliary/scanner` modules, one module family per protocol.
 
 ## Metasploit basics

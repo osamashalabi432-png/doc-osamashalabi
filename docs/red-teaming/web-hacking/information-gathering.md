@@ -1,8 +1,5 @@
 # Web Hacking — Information Gathering
 
-!!! warning "Authorized testing only"
-    These are personal notes from authorized labs, CTFs, and bug-bounty programs. Only run these lookups against targets you own or have explicit written permission to test.
-
 Information gathering is about building a picture of a target's people, infrastructure, and exposed data — mostly using free/public tools and services, so it can usually be done passively. This page collects the practical tools/sites used for email discovery, subdomain enumeration, technology fingerprinting, and breach-data lookups. For the overall recon workflow (target validation, DNS, active host/port discovery), see [Reconnaissance](reconnaissance.md).
 
 ## Email addresses

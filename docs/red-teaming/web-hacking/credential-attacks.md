@@ -1,8 +1,5 @@
 # Web Hacking — Credential Attacks
 
-!!! warning "Authorized testing only"
-    These are personal notes from authorized labs, CTFs, and bug-bounty programs. Only run these techniques against accounts/systems you own or have explicit written permission to test.
-
 Credential attacks try to get valid login credentials without exploiting a code-level vulnerability — either by guessing passwords directly, reusing credentials leaked elsewhere, or cracking a hash that was already obtained. See [Scanning & Enumeration](scanning-enumeration.md) for the per-service Metasploit brute-force modules (SMB, FTP, SSH, SMTP, MySQL).
 
 ## Brute force (Hydra)

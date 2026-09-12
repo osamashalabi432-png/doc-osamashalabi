@@ -1,8 +1,5 @@
 # Linux — Labs
 
-!!! warning "Authorized lab material only"
-    These are personal writeups from authorized HTB/CTF machines, used for learning. Never run these techniques against systems you don't own or have written permission to test.
-
 ## Kenobi
 
 > Walkthrough on exploiting a Linux machine: enumerate Samba for shares, manipulate a vulnerable version of ProFTPD, and escalate privileges with `PATH` variable manipulation.

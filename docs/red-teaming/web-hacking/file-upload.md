@@ -1,8 +1,5 @@
 # Web Hacking — File Upload
 
-!!! warning "Authorized testing only"
-    These are personal notes from authorized labs, CTFs (picoCTF/THM), and bug-bounty programs (Udemy). Only test file-upload functionality on systems you own or have explicit written permission to test.
-
 File upload vulnerabilities happen when an application lets a user upload a file but doesn't properly restrict *what kind* of file gets accepted or *where/how* it can later be accessed — if an attacker can get server-side code (like a PHP script) onto the server and then get the server to execute it, that's remote code execution (RCE). This page covers both real practical examples of exploiting upload-triggered shells, and a hands-on progression through increasingly strict upload-validation code, showing exactly which checks a secure implementation needs and how each weaker version gets bypassed.
 
 For the underlying shell theory (staged vs non-staged, reverse vs bind shell, payload generation), see [Shells](shells.md).

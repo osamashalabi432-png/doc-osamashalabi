@@ -1,8 +1,5 @@
 # Web Hacking — Methodology
 
-!!! warning "Authorized testing only"
-    This methodology and everything under Web Hacking is personal notes from authorized labs, CTFs (HTB/THM), and bug-bounty programs. Only use these steps against systems you own or have explicit written permission to test.
-
 A penetration test is not "just start hacking" — it's a repeatable sequence of phases, each one building on what the previous phase learned. Skipping a phase (e.g. going straight to exploitation without enumeration) usually means missing the easiest way in.
 
 ## The five phases

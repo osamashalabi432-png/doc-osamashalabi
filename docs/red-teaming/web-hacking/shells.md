@@ -1,8 +1,5 @@
 # Web Hacking — Shells
 
-!!! warning "Authorized testing only"
-    These are personal notes from authorized labs, CTFs (HTB/THM/picoCTF), and bug-bounty programs. Only use these techniques against systems you own or have explicit written permission to test.
-
 A "shell" here means remote command execution — getting an interactive command line on the target machine over the network, instead of just being able to trigger one-off actions. There are two main shapes this takes, and the payload used to get one can be sent in different ways.
 
 ## Staged vs non-staged payloads
