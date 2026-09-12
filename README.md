@@ -1,37 +1,39 @@
 # doc-osamashalabi
 
-Personal cybersecurity documentation site — deployments, implementation notes,
-commands, troubleshooting, labs, and red teaming research. Built with
+Personal cybersecurity documentation — enterprise security product
+deployments, implementation notes, commands, troubleshooting, labs, and
+red teaming research. Built with
 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
-Live at: **doc.osamashalabi.com** (once deployed)
+**Live at: [docs.osamashalabi.com](https://docs.osamashalabi.com)**
+
+Notes are written in [Obsidian](https://obsidian.md) against `docs/` as the
+vault and synced to this repo via git — this repo is the single source of
+truth for the published site.
 
 ## Structure
 
 ```
 docs/
   index.md                       Home page (two entry cards)
-  cyber-security-engineer/       Enterprise security products, by category
-    siem/fortisiem/
-    firewall/fortigate/
-    waf/fortiweb/
-    edr/fortiedr/
-    security-management/{fortimanager,fortianalyzer}/
-    patch-management/ivanti/
-    pam/{one-identity,delinea}/
-    cloud/{azure,aws}/
-  red-teaming/                   Offensive security research
-    ai-red-teaming/
-    web-hacking/
-    os-hacking/{linux,windows}/
+  cyber-security-engineer/       Enterprise security products, by project category (not vendor)
+  red-teaming/                   AI, web application, and OS offensive-security research
   stylesheets/extra.css          Minimal theme overrides
 mkdocs.yml                       Site config, theme, nav, plugins
 requirements.txt                 Pinned Python deps
 ```
 
-Every product/technology page is currently a **placeholder** — no real
-architecture details, commands, ports, or licensing info has been invented.
-Content gets filled in per page from verified sources as it's written.
+Cyber Security Engineer is organized by **project category → product →
+pages** (e.g. `firewall/fortigate/`, `pam/one-identity/`), never by vendor.
+Red Teaming is organized by discipline (`ai-red-teaming/`, `web-hacking/`,
+`os-hacking/{linux,windows}/`). The exact category and product list is
+always current in `mkdocs.yml`'s `nav:`, which is the real source of truth
+for what's on the site.
+
+Pages carrying a `!!! note "Placeholder"` callout haven't been written yet.
+Nothing on this site is invented — architecture details, commands, ports,
+and licensing info are only added once verified against official docs or
+first-hand deployment/lab notes.
 
 ### Adding a new product or technology
 
@@ -62,15 +64,6 @@ mkdocs serve
 
 Then open http://127.0.0.1:8000.
 
-> **Note (this machine):** the system had no working Python installer, so a
-> standalone embeddable Python 3.12 was set up at
-> `%LOCALAPPDATA%\Programs\PythonEmbed312` with pip and mkdocs-material
-> installed directly into it (no venv support in the embeddable
-> distribution). To serve locally here, run:
-> `%LOCALAPPDATA%\Programs\PythonEmbed312\python.exe -m mkdocs serve`
-> from this directory. If you later get a normal Python install working,
-> switch to the standard `venv` flow above.
-
 ## Build
 
 ```bash
@@ -81,16 +74,25 @@ Output goes to `site/` (git-ignored).
 
 ## Deployment — Cloudflare Pages
 
-1. Push this repo to GitHub/GitLab.
-2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**, select this repo.
-3. Build settings:
+The site is deployed as a Cloudflare Pages project (`doc-osamashalabi`)
+with `docs.osamashalabi.com` attached as a custom domain over the
+`osamashalabi.com` Cloudflare zone.
+
+Recommended setup for continuous deployment on push:
+
+1. In the Cloudflare dashboard: **Workers & Pages → Create → Pages →
+   Connect to Git**, select this repo.
+2. Build settings:
    - **Build command:** `pip install -r requirements.txt && mkdocs build`
    - **Build output directory:** `site`
-4. Deploy. Once the first deploy succeeds, go to the Pages project's
-   **Custom domains** tab and add `doc.osamashalabi.com`, then follow
-   Cloudflare's instructions to point the domain's DNS (a CNAME record) at
-   the Pages project.
-5. Every push to the main branch redeploys automatically.
+3. Every push to the production branch redeploys automatically.
+
+A build can also be deployed directly without Git integration:
+
+```bash
+mkdocs build
+npx wrangler pages deploy site --project-name doc-osamashalabi
+```
 
 ## Content style
 
