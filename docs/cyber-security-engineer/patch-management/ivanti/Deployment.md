@@ -30,11 +30,7 @@ One download from the internet per branch instead of one per machine. That's you
 
 **To add a preferred server**
 
-1. In the Ivanti Neurons admin page, navigate to Admin > Preferred Server Settings > Servers.
-    
-2. Click Add Server.  
-    The Add Server details page displays.
-    
+1. In the Ivanti Neurons admin page, navigate to **Admin > Preferred Server Settings > Servers.**
+2. Click Add Server.  The Add Server details page displays.
 3. Enter the name of the preferred server in the Preferred server name.
-    
 4. Specify the URL or path to an existing server.
