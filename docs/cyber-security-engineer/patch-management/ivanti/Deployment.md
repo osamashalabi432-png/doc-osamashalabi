@@ -16,7 +16,7 @@ Peers only talk within the same subnet, so your policy design should follow your
 ---
 ### Preferred Server per branch
 
-A **Preferred Server** is a content share you host, an HTTPS or UNC path holding the patch files. Endpoints download from it instead of the vendor's internet servers.
+A **Preferred Server** is a content share you host, an HTTPS or UNC (universal naming convention) path holding the patch files. Endpoints download from it instead of the vendor's internet servers.
 
 A **Sync Engine** is what fills it. It's a capability you enable on an agent, like any other Neurons engine. It downloads the vendor files from the internet and uploads them to the preferred servers, and it deletes expired files too. It runs four times a day automatically, and you can trigger it manually from the command line.
 
@@ -26,3 +26,15 @@ So the flow becomes:
 
 One download from the internet per branch instead of one per machine. That's your answer.
 
+- prerequisite for it is having a SMB, HTTP/S protocols enabled to make it work
+
+**To add a preferred server**
+
+1. In the Ivanti Neurons admin page, navigate to Admin > Preferred Server Settings > Servers.
+    
+2. Click Add Server.  
+    The Add Server details page displays.
+    
+3. Enter the name of the preferred server in the Preferred server name.
+    
+4. Specify the URL or path to an existing server.

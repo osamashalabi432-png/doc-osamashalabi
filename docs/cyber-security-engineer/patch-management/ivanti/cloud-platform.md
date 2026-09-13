@@ -32,3 +32,4 @@ That's the whole idea: **let the junior guy solve problems he used to pass to th
 - He can take remote control of the computer to fix it directly
 - He can click pre-made buttons to do common fixes (restart something, clear something, run a repair)
 - It gives each computer a "health score" so IT can see bad machines before anyone complains
+---
