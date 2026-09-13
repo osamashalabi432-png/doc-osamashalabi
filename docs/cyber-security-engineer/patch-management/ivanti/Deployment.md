@@ -4,7 +4,11 @@ it's a toggle inside the **Agent Policy**, not inside the patch configuration.
 **Where it is**
 Agents > Agent Policies > Create/Edit Policy > **Agent settings** tab > Download Controls > Peer download controls.
 
-**The four modes** Disabled, Client Only (downloads from peers, doesn't share), Server Only (shares, doesn't download), Client and Server (both).
+**The four modes** 
+1. Disabled
+2. Client Only (downloads from peers, doesn't share)
+3. Server Only (shares, doesn't download)
+4. Client and Server (both).
 
 **What to actually pick**
 - Branch/office desktops on the same subnet → Client and Server
