@@ -1,10 +1,10 @@
-# Ivanti Patch Management — Cloud Platform
+# Ivanti Patch Management, Cloud Platform
 
-## Cloud workflow
+## Ivanti Neurons for Patch Management Cloud
 
-The cloud workflow is the primary workflow for performing patch management. The split is:
+it means: getting the client's paid licence turned into a working cloud tenant they can log into.
 
-- **All configuration and assessment activities are performed within the cloud** (Ivanti Neurons) — this is where policies and patch configurations are created and managed.
-- **The actual scans and deployments are performed by agents** installed on the managed devices.
-
-So the cloud platform decides *what* should happen (policy, patch selection), and the [agent](agents.md) on each endpoint is what actually carries it out and reports back. See [Patching Workflow](patching-workflow.md) for the full step sequence.
+- Ivanti provisions the tenant (the client's own instance on Ivanti's cloud, e.g. onetec.ivanticloud.com`)
+- The subscription entitlement is applied: licence count, which Neurons modules, the term dates
+- The first admin account is created and the client takes ownership
+- Tenant basics get set: region/data residency, time zone, initial admin users, SSO if in scope
