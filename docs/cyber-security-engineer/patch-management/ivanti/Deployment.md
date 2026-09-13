@@ -12,4 +12,5 @@ Agents > Agent Policies > Create/Edit Policy > **Agent settings** tab > Download
 - Laptops, VPN/roaming users, DMZ or critical servers → Disabled
 
 Peers only talk within the same subnet, so your policy design should follow your site/VLAN layout. One global policy defeats the purpose.
+---
 
