@@ -12,5 +12,17 @@ Agents > Agent Policies > Create/Edit Policy > **Agent settings** tab > Download
 - Laptops, VPN/roaming users, DMZ or critical servers → Disabled
 
 Peers only talk within the same subnet, so your policy design should follow your site/VLAN layout. One global policy defeats the purpose.
+
 ---
+### Preferred Server per branch
+
+A **Preferred Server** is a content share you host, an HTTPS or UNC path holding the patch files. Endpoints download from it instead of the vendor's internet servers.
+
+A **Sync Engine** is what fills it. It's a capability you enable on an agent, like any other Neurons engine. It downloads the vendor files from the internet and uploads them to the preferred servers, and it deletes expired files too. It runs four times a day automatically, and you can trigger it manually from the command line.
+
+So the flow becomes:
+
+**Internet → Sync Engine → Preferred Server at the branch → all endpoints at that branch**
+
+One download from the internet per branch instead of one per machine. That's your answer.
 
