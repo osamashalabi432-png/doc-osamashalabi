@@ -141,9 +141,103 @@
           }
         }
       }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "test",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\ntest\n\n"
+        }
+      ],
+      "id": "c4acbafb-5a3c-41f7-8ac9-99c6a47ecff0",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/Getting Started with Patch Management.md"
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "hi",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nhi\n\n"
+        }
+      ],
+      "id": "eeda6514-d257-46df-a66b-f19586b8dbb8",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/Getting Started with Patch Management.md"
+        }
+      ]
     }
   ],
   "createdAt": 1789356948570,
-  "updatedAt": 1789356957055,
+  "updatedAt": 1789360161282,
   "schemaVersion": 1
 }
