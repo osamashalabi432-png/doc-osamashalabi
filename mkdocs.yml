@@ -143,10 +143,22 @@ nav:
   - Patch Management:
     - Overview: cyber-security-engineer/patch-management/index.md
     - Ivanti Patch Management:
-      - Overview: cyber-security-engineer/patch-management/ivanti/index.md
-      - Agents: cyber-security-engineer/patch-management/ivanti/agents.md
-      - Cloud Platform: cyber-security-engineer/patch-management/ivanti/cloud-platform.md
-      - Patching Workflow: cyber-security-engineer/patch-management/ivanti/patching-workflow.md
+      - Introduction:
+        - Patch Management: cyber-security-engineer/patch-management/ivanti/introduction/Patch Management.md
+        - Workflow: cyber-security-engineer/patch-management/ivanti/introduction/Workflow.md
+        - Cloud Platform: cyber-security-engineer/patch-management/ivanti/introduction/cloud-platform.md
+      - Agents:
+        - Agent Policies: cyber-security-engineer/patch-management/ivanti/Agents/Agent Policies.md
+        - Agent Policy Capabilities: cyber-security-engineer/patch-management/ivanti/Agents/Agent Policy Capabilities.md
+        - Agent Policy Settings: cyber-security-engineer/patch-management/ivanti/Agents/Agent Policy settings.md
+        - Agent Deployment Options: cyber-security-engineer/patch-management/ivanti/Agents/Agent Deployment Options.md
+        - P2P vs Preferred Server: cyber-security-engineer/patch-management/ivanti/Agents/P2P vs Preferred Server.md
+        - P2P Deployment Steps: cyber-security-engineer/patch-management/ivanti/Agents/P2P deployment steps.md
+      - Preferred Server:
+        - Adding a Preferred Server: cyber-security-engineer/patch-management/ivanti/preferred server/Adding a Preferred Server.md
+        - Configuring a Sync Engine: cyber-security-engineer/patch-management/ivanti/preferred server/Configuring a sync engine.md
+      - URLs, IPs & Ports: cyber-security-engineer/patch-management/ivanti/URLs, IP and ports.md
+      - Troubleshooting: cyber-security-engineer/patch-management/ivanti/Troubleshooting.md
   - Privileged Access Management:
     - Overview: cyber-security-engineer/pam/index.md
     - One Identity PAM:
