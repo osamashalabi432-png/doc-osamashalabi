@@ -15,7 +15,7 @@ Agents > Agent Policies > Create/Edit Policy > **Agent settings** tab > Download
 - One or two stable machines per site you want as the source → Server Only
 - Laptops, VPN/roaming users, DMZ or critical servers → Disabled
 
-Peers only talk within the same subnet, so your policy design should follow your site/VLAN layout. One global policy defeats the purpose.
+==Peers only talk within the same subnet==, so your policy design should follow your site/VLAN layout. One global policy defeats the purpose.
 
 ---
 ### Preferred Server per branch
