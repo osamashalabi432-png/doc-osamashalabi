@@ -1,0 +1,75 @@
+{
+  "id": "136e8de1-5745-4417-a700-8b8d156176ad",
+  "title": "1",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "1",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": null,
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n1\n\n"
+        }
+      ],
+      "id": "46b8cfb4-9c97-47ac-ae0b-1fd05db0f02f",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/Agents/Agent Deployment.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Ivanti Neurons Agent connects endpoints to the Neurons platform. You can assign policies automatically with rules, install manually using a policy and enrollment key, or push-install from an existing deployment-capable agent; for example, push install sends the agent to selected target devices. Key terms: Agent Policy — endpoint configuration; Enrollment Key — registers an agent; APA — rule-based policy assignment; Deployment capability — lets an installed agent deploy to others; credentials — elevated-access details.",
+      "id": "4b1d13da-1da6-4be3-baf3-01f2a0d54c25",
+      "metadata": {
+        "model": {
+          "providerType": "openai-plan",
+          "providerId": "openai-plan",
+          "id": "gpt-5.6-terra (plan)",
+          "model": "gpt-5.6-terra",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 3253,
+          "completion_tokens": 98,
+          "total_tokens": 3351
+        }
+      }
+    }
+  ],
+  "createdAt": 1789372839530,
+  "updatedAt": 1789372845610,
+  "schemaVersion": 1
+}
