@@ -7,24 +7,25 @@ site_author: Osama Shalabi
 copyright: Copyright &copy; Osama Shalabi
 
 repo_name: doc-osamashalabi
-# repo_url: https://github.com/<your-username>/doc-osamashalabi   # set once the repo is pushed
+repo_url: https://github.com/osamashalabi432-png/doc-osamashalabi
 
 docs_dir: docs
 
 theme:
   name: material
+  favicon: assets/favicon.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -35,6 +36,8 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.indexes
     - navigation.path
     - navigation.top
@@ -49,6 +52,7 @@ theme:
     - content.tooltips
   icon:
     repo: fontawesome/brands/github
+    logo: material/shield-lock-outline
 
 extra_css:
   - stylesheets/extra.css

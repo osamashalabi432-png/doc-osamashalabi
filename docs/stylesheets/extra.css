@@ -1,7 +1,88 @@
-/* Minimal, documentation-focused overrides on top of Material's default theme. */
+/*
+ * Custom brand palette (Material's "custom" primary/accent hook).
+ * Header/nav chrome stays a fixed near-black in both light and dark
+ * reading modes — only the content background flips. Accent is a single
+ * signature cyan used consistently for links, active states, and accents.
+ */
+:root,
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0b0f14;
+  --md-primary-fg-color--light: #1c232c;
+  --md-primary-fg-color--dark: #05070a;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-accent-fg-color: #22d3ee;
+  --md-accent-fg-color--transparent: rgba(34, 211, 238, 0.12);
+  --md-accent-bg-color: #06222b;
+  --md-accent-bg-color--light: rgba(6, 34, 43, 0.8);
+
+  --site-accent: #22d3ee;
+  --site-accent-dim: rgba(34, 211, 238, 0.35);
+}
+
+/* Deepen the dark reading surface slightly for more contrast against the
+   near-black header, instead of Material's default flat slate grey. */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0d1117;
+  --md-code-bg-color: #131a22;
+}
 
 .md-grid {
   max-width: 1440px;
+}
+
+/* Subtle depth under the header/tabs bar instead of a hard flat edge */
+.md-header {
+  box-shadow: 0 1px 0 var(--site-accent-dim);
+}
+
+.md-tabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Nav icons (":material-x:" in nav titles): align with the label text */
+.md-nav__icon,
+.md-nav__link .twemoji {
+  vertical-align: -0.15em;
+}
+
+.md-nav__link:hover {
+  color: var(--site-accent);
+}
+
+/* Active page in the sidebar: accent bar instead of the stock plain bold */
+.md-nav__item .md-nav__link--active,
+.md-nav__link[aria-current="page"] {
+  border-left: 2px solid var(--site-accent);
+  padding-left: calc(0.6rem - 2px);
+  font-weight: 700;
+}
+
+/* Headings get a short accent underline — a small "kicker" mark that
+   reads as intentional design rather than a plain wall of text. */
+.md-typeset h1 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.md-typeset h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3rem;
+  height: 3px;
+  background: var(--site-accent);
+  border-radius: 2px;
+}
+
+.md-typeset a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 /* Home page hero: text only, no imagery, no gradients */
@@ -14,6 +95,11 @@
   margin-bottom: 0.25rem;
   font-weight: 700;
   letter-spacing: 0.04em;
+}
+
+.hero-minimal h1::after {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero-minimal h3 {
@@ -37,10 +123,35 @@
 
 .md-typeset .grid.cards > ul > li,
 .md-typeset .grid.cards > .grid > li {
+  border-radius: 0.375rem;
+  border-top: 2px solid transparent;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > .grid > li:hover {
+  border-top-color: var(--site-accent);
+  transform: translateY(-2px);
+}
+
+/* Code blocks: tighter font, crisper border */
+.md-typeset pre > code {
+  font-size: 0.75rem;
+}
+
+.md-typeset .highlight {
+  border-radius: 0.375rem;
+}
+
+/* Admonitions: slightly bolder left rule so callouts read at a glance */
+.md-typeset .admonition,
+.md-typeset details {
+  border-width: 0 0 0 3px;
   border-radius: 0.25rem;
 }
 
-/* Slightly tighter code blocks */
-.md-typeset pre > code {
-  font-size: 0.75rem;
+/* Search modal accent */
+.md-search-result__link:hover,
+.md-search-result__link[data-md-state="active"] {
+  background-color: var(--md-accent-fg-color--transparent);
 }
