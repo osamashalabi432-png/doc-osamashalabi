@@ -1,0 +1,149 @@
+{
+  "id": "5298809f-29a1-440f-b551-595bcf930884",
+  "title": "1",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "1",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": null,
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n1\n\n"
+        }
+      ],
+      "id": "4a1369b1-7a3b-43b1-be3a-db3e3491a3f8",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/URLs, IP and ports.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "This is about how things work — why they matter, and what parts make it up. One tiny example: gravity pulls apples down. Key terms: cause (what makes something happen), effect (what happens), mechanism (how it works).",
+      "id": "91996638-93fb-44e6-bfaf-0643e896af8f",
+      "metadata": {
+        "model": {
+          "providerType": "lm-studio",
+          "providerId": "lm-studio",
+          "id": "qwen3-vl-8b",
+          "model": "qwen/qwen3-vl-8b",
+          "promptLevel": 1,
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 1555,
+          "completion_tokens": 49,
+          "total_tokens": 1604,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "familiarize",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nfamiliarize\n\n"
+        }
+      ],
+      "id": "a5490c1d-9a32-4633-9e12-3d009d5549bc",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/URLs, IP and ports.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "This is about how things work — why they matter, and what parts make it up. One tiny example: gravity pulls apples down. Key terms: cause (what makes something happen), effect (what happens), mechanism (how it works).",
+      "id": "e1e5643c-b34a-4215-9d68-fa849335e34f",
+      "metadata": {
+        "model": {
+          "providerType": "lm-studio",
+          "providerId": "lm-studio",
+          "id": "qwen3-vl-8b",
+          "model": "qwen/qwen3-vl-8b",
+          "promptLevel": 1,
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 1617,
+          "completion_tokens": 49,
+          "total_tokens": 1666,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      }
+    }
+  ],
+  "createdAt": 1789367786559,
+  "updatedAt": 1789367804412,
+  "schemaVersion": 1
+}
