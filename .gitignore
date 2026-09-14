@@ -4,4 +4,6 @@ __pycache__/
 *.pyc
 .DS_Store
 docs/.obsidian/
+docs/.smtcmp_json_db/
+docs/.smtcmp_vector_db.tar.gz
 .wrangler/
