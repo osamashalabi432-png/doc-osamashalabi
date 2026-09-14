@@ -24,14 +24,14 @@ If your devices already contain an Ivanti Neurons agent, you can skip these cond
 1. [Download an agent](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-deployment.htm) for the appropriate device type (Windows, Mac, or Linux).  
 	There are two files included in the download:
 	- The agent executable file
-		- An options file that contains the tenant ID, enrollment key, and cloudhost information that will be needed during the installation process
+	- An options file that contains the tenant ID, enrollment key, and cloudhost information that will be needed during the installation process
 2. [Install the agent](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-deployment.htm) on the desired target devices.
 	1. On the target device, double-click the executable file to begin the installation process.
-		2. Follow the instructions in the installation wizard.
+	2. Follow the instructions in the installation wizard.
 3. Wait for the agent to automatically do the following:
 	- Register and check in with Ivanti Neurons
-		- Download the assigned [agent policy](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-policies.htm)
-		- Perform a scan of the target device for all missing patches and report the results to Ivanti Neurons
+	- Download the assigned [agent policy](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-policies.htm)
+	- Perform a scan of the target device for all missing patches and report the results to Ivanti Neurons
 4. View information about the newly discovered target devices from [Devices view](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/devices.htm) within Ivanti Neurons.
 
 #### Primary Steps
@@ -42,7 +42,7 @@ If your devices already contain an Ivanti Neurons agent, you can skip these cond
 	Within the custom agent policy you can select to use peer-to-peer download. Peer-to-peer supports digitally signed and sideloaded patches. Patches automatically downloaded from the vendor that are not digitally signed, are not supported by peer-to-peer, for example, 7-Zip and Core FTP. The server peer will share only OS applicable patches to the peer client, for example a Server 2019 will share only 2019 patches.
 2. Configure your [patch settings](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/patching-settings.htm).  
 	Your patch settings will consist of the following:
-	- Patch configuration: The primary purpose of a patch configuration is to define how patches will be deployed to the agent devices. A default patch configuration is provided that will deploy all missing critical security patches in your Windows environment on a weekly basis. You will likely want to create one or more custom patch configurations to define the unique patch deployment requirements of your organization.
+	- Patch configuration: ==The primary purpose of a patch configuration is to define how patches will be deployed to the agent devices.== A default patch configuration is provided that will deploy all missing critical security patches in your Windows environment on a weekly basis. You will likely want to create one or more custom patch configurations to define the unique patch deployment requirements of your organization.
 		On the Associations tab, be sure to associate your patch configuration with a custom agent policy that is enabled to perform patch management actions.
 		- (Optional) Patch group: You may choose to reference a patch group in a patch configuration. A patch group contains a list of specific patches that you want to deploy. This is a good way to make sure that only approved patches are deployed. See the Deployment behavior section in the [Patch Settings](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/patching-settings.htm) topic for information on how to properly configure this scenario.
 3. Wait for the changes to propagate to your devices.  
@@ -50,10 +50,10 @@ If your devices already contain an Ivanti Neurons agent, you can skip these cond
 4. Deploy missing patches to the agent device.  
 	The deployment can be accomplished four different ways:
 	- Via an automatic, scheduled patch deployment that is defined by the [patch configuration](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/patching-settings.htm).
-		- From the [Endpoint Vulnerability](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/endpoint-vulnerability.htm) component within Ivanti Neurons for Patch Management. You can use this component to deploy all patches that were identified as missing during the most recent patch scan.
+	- From the [Endpoint Vulnerability](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/endpoint-vulnerability.htm) component within Ivanti Neurons for Patch Management. You can use this component to deploy all patches that were identified as missing during the most recent patch scan.
 		Be sure you have the Patch Management [permissions](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/access-control.htm) needed to deploy patches from Endpoint Vulnerability.
-		- From the Patches tab of the [Device Details](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/device-details.htm) page. You can select individual patches for deployment from this page.
-		- By using the [Agent UI](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-client.htm) on the agent device to immediately initiate a patch deployment.
+	- From the Patches tab of the [Device Details](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/device-details.htm) page. You can select individual patches for deployment from this page.
+	- By using the [Agent UI](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-client.htm) on the agent device to immediately initiate a patch deployment.
 	To install the Agent UI you must enable the capability in the assigned agent policy.
 	If a patch fails to install, it is re-tried (Windows: up to three times in an individual patch cycle and up to five times in total for the endpoint. Mac: up to three times. Linux: no retry). You can also configure the deployment to run on reboot as part of the configuration's schedule if the device is offline.
 	After a patch deployment, the agent device will be automatically rescanned and the results sent to Ivanti Neurons. This will enable you to verify the deployment status and assess the current health of the agent device.
