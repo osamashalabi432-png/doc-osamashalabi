@@ -265,9 +265,141 @@
           "total_tokens": 2260
         }
       }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "1",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": null,
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n1\n\n"
+        }
+      ],
+      "id": "c914af08-f3ff-4f42-ac87-ffa9b2ada9f8",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/preferred server/Adding a Preferred Server.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Preferred Servers are file shares that Ivanti Neurons uses to provide files, without needing Ivanti software on the host machine. They matter because devices can retrieve content from a local or controlled location. You configure a server name, URL or file path, read credentials, and optionally an SMB path for sync engines. HTTPS is recommended because it encrypts data; HTTP sends data in plain text. Preferred Server: content share. Read credentials: access account. SMB path: sync-engine location.",
+      "id": "0c1d9abd-bed1-4211-b7c2-60db4902867b",
+      "metadata": {
+        "model": {
+          "providerType": "openai-plan",
+          "providerId": "openai-plan",
+          "id": "gpt-5.6-terra (plan)",
+          "model": "gpt-5.6-terra",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 2490,
+          "completion_tokens": 128,
+          "total_tokens": 2618
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "thus the system the wother the ",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nthus the system the wother the \n\n"
+        }
+      ],
+      "id": "bbc0cf7a-ce8c-4f6f-9b03-21a8a896ee4f",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/preferred server/Adding a Preferred Server.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Could you finish the question?",
+      "id": "15bdec64-1baf-4c77-bf01-3bf2556964a3",
+      "metadata": {
+        "model": {
+          "providerType": "openai-plan",
+          "providerId": "openai-plan",
+          "id": "gpt-5.6-terra (plan)",
+          "model": "gpt-5.6-terra",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 2606,
+          "completion_tokens": 66,
+          "total_tokens": 2672
+        }
+      }
     }
   ],
   "createdAt": 1789370886211,
-  "updatedAt": 1789371092175,
+  "updatedAt": 1789371322168,
   "schemaVersion": 1
 }
