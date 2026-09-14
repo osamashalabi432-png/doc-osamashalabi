@@ -49,11 +49,11 @@ If your devices already contain an Ivanti Neurons agent, you can skip these cond
 	Your devices will receive the updated policy and patch configuration information the next time the agents check in with Ivanti Neurons.
 4. Deploy missing patches to the agent device.  
 	The deployment can be accomplished four different ways:
-	- Via an automatic, scheduled patch deployment that is defined by the [patch configuration](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/patching-settings.htm).
-	- From the [Endpoint Vulnerability](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/endpoint-vulnerability.htm) component within Ivanti Neurons for Patch Management. You can use this component to deploy all patches that were identified as missing during the most recent patch scan.
+	- Via an ==automatic==, scheduled patch deployment that is defined by the [patch configuration](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/patching-settings.htm).
+	- ==From the [Endpoint Vulnerability](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/endpoint-vulnerability.htm)== component within Ivanti Neurons for Patch Management. You can use this component to deploy all patches that were identified as missing during the most recent patch scan.
 		Be sure you have the Patch Management [permissions](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/access-control.htm) needed to deploy patches from Endpoint Vulnerability.
-	- From the Patches tab of the [Device Details](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/device-details.htm) page. You can select individual patches for deployment from this page.
-	- By using the [Agent UI](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-client.htm) on the agent device to immediately initiate a patch deployment.
+	- From the ==Patches tab of the [Device Details](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/device-details.htm) page==. You can select individual patches for deployment from this page.
+	- By using the ==[Agent UI](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-client.htm) on the agent device== to immediately initiate a patch deployment.
 	To install the Agent UI you must enable the capability in the assigned agent policy.
 	If a patch fails to install, it is re-tried (Windows: up to three times in an individual patch cycle and up to five times in total for the endpoint. Mac: up to three times. Linux: no retry). You can also configure the deployment to run on reboot as part of the configuration's schedule if the device is offline.
 	After a patch deployment, the agent device will be automatically rescanned and the results sent to Ivanti Neurons. This will enable you to verify the deployment status and assess the current health of the agent device.
