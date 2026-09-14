@@ -1,15 +1,20 @@
 /*
  * Custom brand palette (Material's "custom" primary/accent hook).
- * Header/nav chrome stays a fixed near-black in both light and dark
- * reading modes — only the content background flips. Accent is a single
- * signature cyan used consistently for links, active states, and accents.
+ *
+ * IMPORTANT: Material reuses --md-primary-fg-color as a plain foreground
+ * TEXT color in several content-area places (the active/"passed" nav path
+ * labels, the "On this page" heading, links inside tables) — not just the
+ * header background. It must stay a color that's actually readable on a
+ * dark background. The near-black "always-dark chrome" look is instead
+ * achieved below by setting the header/tabs background directly, decoupled
+ * from this variable.
  */
 :root,
 [data-md-color-scheme="default"],
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #0b0f14;
-  --md-primary-fg-color--light: #1c232c;
-  --md-primary-fg-color--dark: #05070a;
+  --md-primary-fg-color: #22d3ee;
+  --md-primary-fg-color--light: #67e8f9;
+  --md-primary-fg-color--dark: #0891b2;
   --md-primary-bg-color: #ffffff;
   --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
 
@@ -20,6 +25,7 @@
 
   --site-accent: #22d3ee;
   --site-accent-dim: rgba(34, 211, 238, 0.35);
+  --site-chrome-bg: #0b0f14;
 }
 
 /* Deepen the dark reading surface slightly for more contrast against the
@@ -27,6 +33,14 @@
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: #0d1117;
   --md-code-bg-color: #131a22;
+}
+
+/* Header/tabs bar: fixed near-black chrome in both light and dark reading
+   modes, set directly rather than via --md-primary-fg-color (see note
+   above for why that variable has to stay a readable, non-black color). */
+.md-header,
+.md-tabs {
+  background-color: var(--site-chrome-bg);
 }
 
 .md-grid {
