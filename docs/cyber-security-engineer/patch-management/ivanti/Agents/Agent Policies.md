@@ -9,14 +9,14 @@ The Agent Policies page displays a list of all system generated and custom polic
 
 The following actions are available for each policy:
 
-- View: Select to display the Policy details page. You can view the Agent settings, Reboot experience, Capabilities, Enrollment Keys, and Agent Endpoints.
+- ==View==: Select to display the Policy details page. You can view the Agent settings, Reboot experience, Capabilities, Enrollment Keys, and Agent Endpoints.
 - Edit: Select to display the Policy details page. You can edit the policy name and description, and the Capabilities selection.
 - Delete: Select to delete the policy. A confirmation dialog is displayed. Click Delete to confirm the action.  
 	You cannot delete the predefined Infrastructure Agents policy.
 
 [How to create an Agent Policy](#)
 
-1. Navigate to Agents > Agent Policies.  
+1. Navigate to ==Agents > Agent Policies==.  
 	The Agent Policies page appears.
 2. Select Create Policy.  
 	The Create Agent Policy page appears.
