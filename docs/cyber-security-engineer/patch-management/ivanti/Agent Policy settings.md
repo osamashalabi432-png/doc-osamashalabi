@@ -1,6 +1,27 @@
 To access the Agent settings panel, navigate to Agents > Agent Policies > Create Policy > Agent settings tab.
 
 ## Download Controls
+[![Open](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/Skins/Default/Stylesheets/Images/transparent.gif)Peer download controls](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-policy-settings.htm?utm_source=chatgpt.com#)
+
+This allows devices on a network to share agent, engine and configuration installations between one another. One device can connect directly with another without going through an intermediary server. A peer-to-peer network performs more efficiently than a client-server network with the more devices you have, due to the file transfer load being distributed between them. It is also more reliable than a client-server network because it will remain functional if there is a server connection issue.
+
+When using peer download, ensure your firewall allows UDP and TCP traffic on ports 33121 and 33122.  
+Peer-to-peer supports digitally signed and sideloaded patches. Patches automatically downloaded from the vendor that are not digitally signed, are not supported by peer-to-peer, for example, 7-Zip and Core FTP.
+
+[![Open](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/Skins/Default/Stylesheets/Images/transparent.gif)Preferred server download controls](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-policy-settings.htm?utm_source=chatgpt.com#)
+
+If you are using only one preferred server, then you can point it to that preferred server, or you can assign it to a range of IP addresses for a more targeted download.
+
+By adding multiple preferred servers, Ivanti Neurons scans for the downloaded content in all the preferred servers. If it fails to find the content, Ivanti Neurons automatically downloads the content in the order of peer, preferred servers, and other cloud servers.
+
+Select the Download from preferred server toggle > select a Preferred Server from the drop-down or Detect by IP address.
+
+Select from the following options:
+
+- Disabled: Content will not be shared with or downloaded from peers.
+- Client Only: Content will not be shared with peers. Content will be downloaded from peers.
+- Server Only: Content will be shared with peers. Content will not be downloaded from peers.
+- Client and Server: Content will be shared with and downloaded from peers.
 
 ## Bandwidth Utilization
 
