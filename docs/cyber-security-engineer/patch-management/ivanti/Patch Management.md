@@ -27,7 +27,7 @@ For the complete list of URLs that you need to add, see [Required URLs, IP addre
 
 ### Microsoft Windows and Microsoft Office
 
-To successfully deploy patches with the Ivanti Neurons Agent to Windows devices, do not disable the Windows Update service, but set it to either Manual or Automatic. In addition, set the Windows Update setting on each target device (Control Panel > System and Security > Windows Update > Change settings) to Never check for updates. For more information, [see this article](https://forums.ivanti.com/s/article/Best-Practice-Windows-Automatic-Updates) on the Ivanti Community.
+To successfully deploy patches with the Ivanti Neurons Agent to Windows devices, ==do not disable the Windows Update service==, but set it to either Manual or Automatic. In addition, set the Windows Update setting on each target device (Control Panel > System and Security > Windows Update > Change settings) to Never check for updates. For more information, [see this article](https://forums.ivanti.com/s/article/Best-Practice-Windows-Automatic-Updates) on the Ivanti Community.
 
 If you are patching Office 2019 or Office 365 that use Click-to-Run technology, see [How Ivanti patches Office Click-to-Run installations](https://forums.ivanti.com/s/article/How-Security-Controls-patches-Office-Click-to-Run-installations) on the Ivanti Community (opens in a new window) for information about how Patch for Neurons patches these installations.
 
