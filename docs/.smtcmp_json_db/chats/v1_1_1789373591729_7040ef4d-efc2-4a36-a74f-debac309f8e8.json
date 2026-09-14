@@ -1,0 +1,207 @@
+{
+  "id": "7040ef4d-efc2-4a36-a74f-debac309f8e8",
+  "title": "1",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "1",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": null,
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\n1\n\n"
+        }
+      ],
+      "id": "a7c9f4a9-e5c1-40b9-8dd5-3dbfe8a017ce",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/Agents/Agent Deployment Options.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Ivanti Neurons agents connect endpoints to the platform for management. You can deploy them three ways: automated policy assignment, manual installation, or Neurons push installation. Automated policy assignment uses rules to choose policies; manual install uses a selected policy and enrollment key; push install deploys remotely to chosen devices using a deployment-capable agent and OS credentials. For example, a rule can assign laptop devices one policy automatically. Key terms: agent — endpoint software; policy — agent settings; enrollment key — registration key; credentials — elevated-access login.",
+      "id": "1948b71b-e689-442c-8c1d-e59a4837a942",
+      "metadata": {
+        "model": {
+          "providerType": "openai-plan",
+          "providerId": "openai-plan",
+          "id": "gpt-5.6-terra (plan)",
+          "model": "gpt-5.6-terra",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 3253,
+          "completion_tokens": 140,
+          "total_tokens": 3393
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "what are the options to make an agent policy",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nwhat are the options to make an agent policy\n\n"
+        }
+      ],
+      "id": "ec4d74af-a62c-4fee-9310-16632887736f",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/Agents/Agent Policies.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Create a policy, name it, optionally add a description, select any capabilities, then configure Agent settings, Reboot experience, and Maintenance Windows.",
+      "id": "1b63ce0a-9af0-440f-911f-820eaae6f993",
+      "metadata": {
+        "model": {
+          "providerType": "openai-plan",
+          "providerId": "openai-plan",
+          "id": "gpt-5.6-terra (plan)",
+          "model": "gpt-5.6-terra",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 2515,
+          "completion_tokens": 74,
+          "total_tokens": 2589
+        }
+      }
+    },
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "how to make a policy for p2p patch distribution?",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nhow to make a policy for p2p patch distribution?\n\n"
+        }
+      ],
+      "id": "a7d2f257-34c6-4226-bcb3-ba3f366b0934",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "cyber-security-engineer/patch-management/ivanti/Agents/Agent Policies.md"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "The source doesn’t specify how to configure peer-to-peer patch distribution. Create a policy, then select the relevant capability and configure its settings if P2P distribution is available.",
+      "id": "f258db29-8964-4d3b-bdfd-27ea480b7ed5",
+      "metadata": {
+        "model": {
+          "providerType": "openai-plan",
+          "providerId": "openai-plan",
+          "id": "gpt-5.6-terra (plan)",
+          "model": "gpt-5.6-terra",
+          "enable": true
+        },
+        "usage": {
+          "prompt_tokens": 2567,
+          "completion_tokens": 73,
+          "total_tokens": 2640
+        }
+      }
+    }
+  ],
+  "createdAt": 1789373365412,
+  "updatedAt": 1789373591729,
+  "schemaVersion": 1
+}
