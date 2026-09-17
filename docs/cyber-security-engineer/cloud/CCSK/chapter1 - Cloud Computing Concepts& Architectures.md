@@ -21,3 +21,6 @@ model for enabling ubiquitous, convenient, on-demand network access to a shared 
 **cloud pools**: share resources like CPUs and storage to serve many users at once like a shared resturant kitchen
 
 **Broad Network Access**: Services are available over the network and accessed through web browsers or specialized applications while using heterogeneous thin client platforms 
+
+**Rapid Elasticity:** Cloud resources grow or shrink instantly — like turning on a faucet to get more water or turning it off to save. You don’t wait for hardware; you get what you need, when you need it, automatically.
+
