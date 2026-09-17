@@ -15,3 +15,9 @@ model for enabling ubiquitous, convenient, on-demand network access to a shared 
 **top**: What it must do (access, scale, measure, self-serve).  
 **Middle**: What kind of service you get (SaaS, PaaS, IaaS).  
 **Bottom**: Where it’s hosted (public, private, hybrid, community).
+
+---
+#### Essential characteristics: 
+**cloud pools**: share resources like CPUs and storage to serve many users at once like a shared resturant kitchen
+
+**Broad Network Access**: Services are available over the network and accessed through web browsers or specialized applications while using heterogeneous thin client platforms 
