@@ -193,6 +193,11 @@ nav:
       - Labs: cyber-security-engineer/cloud/azure/labs.md
     - AWS:
       - Overview: cyber-security-engineer/cloud/aws/index.md
+    - CCSK:
+      - Study Guide: cyber-security-engineer/cloud/CCSK/CCSK Study Guide 20250821.md
+      - "1. Cloud Computing Concepts & Architectures": cyber-security-engineer/cloud/CCSK/chapter1 - Cloud Computing Concepts& Architectures.md
+      - "2. Cloud Governance": cyber-security-engineer/cloud/CCSK/chapter2 - cloud governance.md
+      - "3. Risk, Audit and Compliance": cyber-security-engineer/cloud/CCSK/chapter3 - Risk, Audit and Compliance.md
   - Virtualization & Containers:
     - Overview: cyber-security-engineer/virtualization-containers/index.md
     - Concepts: cyber-security-engineer/virtualization-containers/concepts.md
