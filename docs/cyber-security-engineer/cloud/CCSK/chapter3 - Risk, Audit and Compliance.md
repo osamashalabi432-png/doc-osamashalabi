@@ -29,6 +29,7 @@ This process ensures cloud services meet your needs by:
 ![](../../../attachments/Pasted%20image%2020260918104005.png)
 
 1. Business Requests Whether or not the business unit has a specific cloud service in mind, it is important to understand the business need and the data involved
+
 2. Review CSP Documentation:
 	1. Security and privacy documentation: Review the CSP’s published security policies, privacy policies, and data handling practices to ensure they align with your organization's standards.  
 	
@@ -37,3 +38,7 @@ This process ensures cloud services meet your needs by:
 	3. Terms of service (ToS): Understanding the ToS is important to avoid legal or operational surprises post-adoption. These may be the only legal contracts between you and the provider.  
 	
 	4. CAIQ and certifications: The CSA Consensus Assessments Initiative Questionnaire (CAIQ), based on the Cloud Controls Matrix (CCM), provides a comprehensive set of questions that CSPs answer to disclose their security controls. CSP certifications (e.g., ISO/IEC 27001, SOC 2) offer third-party validation of their security practices.
+
+3. Review External Sources Research: Investigate external reviews, reported vulnerabilities, and any past security and operational incidents involving the CSP to gauge their security posture and response capabilities.
+
+4. 
