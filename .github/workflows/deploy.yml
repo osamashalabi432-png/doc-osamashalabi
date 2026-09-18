@@ -25,9 +25,16 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      - name: Debug token presence
+        run: echo "Token length is ${#CLOUDFLARE_API_TOKEN} characters"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: e2a02330b193fc25b9ce452f4d134885
           command: pages deploy site --project-name=doc-osamashalabi --branch=master
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
