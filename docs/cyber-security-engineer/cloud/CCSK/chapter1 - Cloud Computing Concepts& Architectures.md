@@ -25,3 +25,5 @@ model for enabling ubiquitous, convenient, on-demand network access to a shared 
 **Rapid Elasticity:** Cloud resources grow or shrink instantly — like turning on a faucet to get more water or turning it off to save. You don’t wait for hardware; you get what you need, when you need it, automatically.
 
 **Measured Service**: Cloud tracks how much you use — storage, bandwidth, users — and bills you only for what you consume, like a utility meter. You pay for what you actually use, not what you own.
+
+**On-Demand Self-Service**: You can request cloud resources anytime, without waiting for someone to approve or manually set up the hardware — it’s automatic.
