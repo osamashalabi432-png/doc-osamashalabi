@@ -27,3 +27,9 @@ model for enabling ubiquitous, convenient, on-demand network access to a shared 
 **Measured Service**: Cloud tracks how much you use — storage, bandwidth, users — and bills you only for what you consume, like a utility meter. You pay for what you actually use, not what you own.
 
 **On-Demand Self-Service**: You can request cloud resources anytime, without waiting for someone to approve or manually set up the hardware — it’s automatic.
+
+---
+### Cloud Service Models
+IaaS: it gives you virtual machiness, storage and networking, the customer manage the OS and the apps, the cloud provider manages the hardware
+
+PaaS: 
