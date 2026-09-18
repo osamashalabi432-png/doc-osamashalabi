@@ -32,11 +32,5 @@ model for enabling ubiquitous, convenient, on-demand network access to a shared 
 ### Cloud Service Models
 IaaS: it gives you virtual machiness, storage and networking, the customer manage the OS and the apps, the cloud provider manages the hardware
 
-PaaS: 
 
-| Feature               | IaaS (Infrastructure as a Service)           | PaaS (Platform as a Service)               |
-|-----------------------|---------------------------------------------|-------------------------------------------|
-| What you get          | Virtual machines, storage, networking       | OS, runtime, DB, dev tools                |
-| What you manage       | OS and applications                         | Only your code                            |
-| What provider manages | Hardware (physical servers)                | Infrastructure + OS + runtime             |
-| Example               | AWS EC2, Azure VMs                         | Google App Engine, Heroku                |
+![](../../../attachments/Pasted%20image%2020260918074406.png)
