@@ -12,3 +12,8 @@
 
 ---
 ![](../../../attachments/Pasted%20image%2020260918102218.png)
+
+**Risk Assessment:** Identify and analyze relevant risks to understand their potential impact on the organization. This involves evaluating each risk to determine the likelihood of occurrence and the severity of its consequences.
+
+**Risk Treatment:** After assessing risks, develop and approve an action plan to mitigate, transfer, avoid, or accept each risk. Implement these action plans and identify any residual risks that remain.
+
