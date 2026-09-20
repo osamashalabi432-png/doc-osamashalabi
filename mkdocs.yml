@@ -11,6 +11,11 @@ repo_url: https://github.com/osamashalabi432-png/doc-osamashalabi
 
 docs_dir: docs
 
+# Cloudflare Pages rejects any single file over 25 MiB, which fails the whole
+# deploy. Files listed here stay in the repo but are left out of the built site.
+exclude_docs: |
+  cyber-security-engineer/waf/fortiweb/fortiWEB_labs.pdf
+
 theme:
   name: material
   favicon: assets/favicon.svg
