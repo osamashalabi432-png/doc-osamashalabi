@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects: short, shareable links.
+# Format: <short path> <destination> <status>. 302 so they can be repointed later.
+/fortigate-lab /cyber-security-engineer/firewall/fortigate/fortigate-lab-guide.pdf 302

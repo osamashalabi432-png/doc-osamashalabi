@@ -40,4 +40,4 @@ The default administrator credentials are:
 
 Hands-on FortiGate firewall lab guide (PDF, 5.8 MB):
 
-[:material-file-pdf-box: Download the FortiGate Firewall Lab Guide](FortiGate%20Firewall%20Lab%20Guide%20_%20PDF%20_%20Command%20Line%20Interface%20_%20Transport%20Layer%20Security.pdf){ .md-button download }
+[:material-file-pdf-box: Download the FortiGate Firewall Lab Guide](fortigate-lab-guide.pdf){ .md-button download }
