@@ -87,3 +87,10 @@ Topic areas:
 - **Encryption, authentication, and compliance** — mitigating web application vulnerabilities, access control and tracking methods, mitigating attacks on authentication, SSL inspection and offloading, encryption/authentication troubleshooting
 - **Web application security** — threat mitigation features, blocking known attacks, threat detection troubleshooting, API protection
 - **Machine learning (ML)** — anomaly detection, bot detection, API anomaly detection
+
+
+## Lab guide
+
+Hands-on FortiWeb lab guide covering Lab 1 (Setup), Lab 3 (ML API Protection), Lab 4 (Web Shell Detection) and Lab 7 (SQL Injection) (PDF, 15.3 MB):
+
+[:material-file-pdf-box: Download the FortiWeb Lab Guide](fortiWEB_labs_1-3-4-7.pdf){ .md-button download }
