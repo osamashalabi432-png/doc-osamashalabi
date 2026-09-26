@@ -11,11 +11,11 @@ time: 9/26/2026 - 11/7/2026
 | **Review + mocks**            | **Nov 2 – Nov 6** | **5**          |
 
 - [ ] D1: Concepts & Architecture (ch1 + ch2)
-- [ ] D2: Data Security  (ch3)
-- [ ] D3: Platform & Infrastructure 
-- [ ] D4: Application Security
-- [ ] D5: Security Operations
-- [ ] D6: Legal, Risk & Compliance
+- [ ] D2: Data Security  (ch3 + ch4)
+- [ ] D3: Platform & Infrastructure (ch5 + ch8)
+- [ ] D4: Application Security (ch7)
+- [ ] D5: Security Operations (ch6 + ch8 + ch9)
+- [ ] D6: Legal, Risk & Compliance (ch10 + ch11)
 - [ ] Review + mocks
 
 
