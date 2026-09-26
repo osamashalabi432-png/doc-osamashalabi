@@ -15,3 +15,9 @@
 
 -> Because business requirements tell us exactly what the organization needs to run successfully, which guide every security and cloud decision.
 
+---
+
+**Quantifying benefits:** means measuring the money you save by moving to the cloud, like cutting capital or personnel expenses.
+
+**Opportunity cost** is the value of that saved money being used for something else instead.
+
