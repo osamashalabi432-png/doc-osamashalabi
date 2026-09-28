@@ -21,3 +21,13 @@
 
 **Opportunity cost** is the value of that saved money being used for something else instead.
 
+
+
+
+## Business Requirements
+1. inventory of all assets
+2. valuation of each asset: much an asset is worth to your business
+3. determination of critical paths, processes, and assets
+4. clear understanding of risk appetite
+
+
