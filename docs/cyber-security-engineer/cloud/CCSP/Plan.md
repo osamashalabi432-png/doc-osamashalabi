@@ -10,7 +10,7 @@ time: 9/26/2026 - 11/7/2026
 | D6: Legal, Risk & Compliance  | Oct 26 – Nov 1    | 7              |
 | **Review + mocks**            | **Nov 2 – Nov 6** | **5**          |
 
-- [ ] D1: Concepts & Architecture (ch1 + ch2)
+- [x] D1: Concepts & Architecture (ch1 + ch2)
 - [ ] D2: Data Security  (ch3 + ch4)
 - [ ] D3: Platform & Infrastructure (ch5 + ch8)
 - [ ] D4: Application Security (ch7)
