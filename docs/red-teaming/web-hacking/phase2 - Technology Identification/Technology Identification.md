@@ -1,14 +1,4 @@
-## 1. Identify web server
-
-- [ ] Find the server software (Apache, Nginx, IIS)
-
-```bash
-whatweb https://onetec.com
-```
-
----
-
-## 2. Identify application framework
+## 1. Identify application framework
 
 - [ ] Detect the backend framework (Laravel, Django, Rails, Express)
 
@@ -24,7 +14,7 @@ curl -sI https://onetec.com | grep -iE "x-powered-by|set-cookie"
 
 ---
 
-## 3. Identify programming language
+## 2. Identify programming language
 
 - [ ] Work out the language (PHP, Python, Node, .NET)
 
@@ -39,10 +29,6 @@ Hints: file extensions (`.php`, `.aspx`), the `X-Powered-By` header, and session
 ## 4. Identify CMS
 
 - [ ] Detect a CMS (WordPress, Joomla, Drupal)
-
-```bash
-whatweb https://onetec.com
-```
 
 For WordPress specifically:
 
