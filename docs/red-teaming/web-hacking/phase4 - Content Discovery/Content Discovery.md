@@ -21,7 +21,7 @@ sudo apt install seclists
 With `ffuf`:
 
 ```bash
-ffuf -u https://onetec.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -mc 200,204,301,302,307,401,403 -o dirs.txt
+ffuf -u https://onetec.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -mc 200,204,301,302,307,401,403 -recursion -recursion-depth 5
 ```
 
 With `feroxbuster` (recursive by default):
@@ -183,27 +183,7 @@ Check directly: `/error.log`, `/access.log`, `/debug.log`, `/logs/`.
 
 ---
 
-## 13. Review robots.txt
-
-- [ ] Read disallowed paths (often points at hidden areas)
-
-```bash
-curl -s https://onetec.com/robots.txt
-```
-
----
-
-## 14. Review sitemap.xml
-
-- [ ] Read the sitemap for a map of pages
-
-```bash
-curl -s https://onetec.com/sitemap.xml
-```
-
----
-
-## 15. Review .well-known resources
+## 13. Review .well-known resources
 
 - [ ] Check standardized metadata paths
 
@@ -223,11 +203,5 @@ feroxbuster -u https://onetec.com -w /usr/share/seclists/Discovery/Web-Content/r
 ffuf -u https://onetec.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-files.txt -e .env,.bak,.zip,.sql,.log,.config -mc 200,403 -o sensitive.txt
 ```
 
-> [!tip] Tool notes
-> - `ffuf`, `feroxbuster` → usually preinstalled on Kali
-> - `pdhttpx` → your renamed ProjectDiscovery httpx
-> - `urls.txt` / `jsfiles.txt` come from the **Historical Discovery** page — reuse them
-> - Add `-fs <size>` to filter out "soft 404" pages that return 200 for everything
 
-> [!warning]
-> Keep all activity inside your authorized scope.
+
