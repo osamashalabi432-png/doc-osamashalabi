@@ -46,7 +46,7 @@ httpx -l resolved.txt -sc -title -o live.txt
  
 ## 5. Identify exposed ports and services
  
-- [ ] Scan for open ports
+- [x] Scan for open ports
 ```bash
 nmap -sV onetec.com
 ```
@@ -61,7 +61,7 @@ naabu -l resolved.txt -o ports.txt
  
 ## 6. Identify IP addresses and hosting providers
  
-- [ ] Find the IPs and who hosts them
+- [x] Find the IPs and who hosts them
 ```bash
 dig +short onetec.com
 whois <IP-address>
