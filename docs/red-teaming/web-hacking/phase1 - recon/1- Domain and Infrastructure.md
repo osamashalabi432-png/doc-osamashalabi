@@ -118,9 +118,6 @@ whois <the-IP>
 curl -sI https://onetec.com
 ```
  
-> [!note]
-> Check headers like `Via`, `X-Cache`, and `Server`.
- 
 ---
  
 ## 11. Identify WAF protection
