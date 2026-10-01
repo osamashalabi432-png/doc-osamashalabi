@@ -1,24 +1,3 @@
-## 1. Search historical URLs
- 
-- [ ] Pull every URL ever seen for the domain from public archives
-```bash
-waybackurls onetec.com > urls.txt
-```
- 
-More sources with `gau`:
- 
-```bash
-gau onetec.com > urls.txt
-```
- 
-Crawl with `katana`:
- 
-```bash
-katana -u onetec.com -d 3 -o crawl.txt
-```
- 
----
- 
 ## 2. Review archived application versions
  
 - [ ] Look at old snapshots of the site
@@ -30,7 +9,6 @@ List all archived snapshots:
 curl -s "http://web.archive.org/cdx/search/cdx?url=onetec.com*&output=text&fl=original&collapse=urlkey" | sort -u
 ```
  
----
  
 ## 3. Identify historical parameters
  
