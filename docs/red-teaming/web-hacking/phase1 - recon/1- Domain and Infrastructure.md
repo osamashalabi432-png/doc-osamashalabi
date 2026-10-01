@@ -72,7 +72,7 @@ asnmap -d onetec.com
  
 ## 7. Review DNS records
  
-- [ ] Pull the main record types
+- [x] Pull the main record types
 ```bash
 dig +short A onetec.com
 dig +short MX onetec.com
