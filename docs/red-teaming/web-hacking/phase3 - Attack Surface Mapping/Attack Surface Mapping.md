@@ -16,11 +16,8 @@ Also check subdomains from your earlier recon — each may host a separate app.
 - [ ] Find where login is required vs. public
 
 ```bash
-cat crawl.txt | httpx -sc -title
+cat crawl.txt | pdhttpx -sc -title
 ```
-
-> [!note]
-> `401`/`403` = protected. `200` = open. Compare what's reachable logged in vs. logged out.
 
 ---
 
@@ -94,9 +91,6 @@ cat crawl.txt | grep -iE "download|export|file=|path=|getfile"
 cat crawl.txt | grep -iE "import|upload|csv|xml|batch"
 ```
 
-> [!note]
-> XML import is worth a close look — it can lead to XXE.
-
 ---
 
 ## 9. Identify export functionality
@@ -116,9 +110,6 @@ cat crawl.txt | grep -iE "export|report|generate|download|csv|pdf"
 ```bash
 cat crawl.txt | grep -iE "search|query|q=|find|lookup"
 ```
-
-> [!note]
-> Search inputs are classic spots for injection and reflected XSS.
 
 ---
 
@@ -171,11 +162,3 @@ cat crawl.txt | grep -iE "api|graphql|/v[0-9]" | sort -u > apis.txt
 cat crawl.txt | grep -iE "upload|download|import|export" | sort -u > filefuncs.txt
 cat urls.txt | grep -iE "redirect|url=|next=|dest=" | sort -u > redirects.txt
 ```
-
-> [!tip] Tool notes
-> - `katana`, `httpx` → ProjectDiscovery Go tools (needs Go 1.21+)
-> - `ffuf`, `ffuf` → usually preinstalled on Kali
-> - `urls.txt` / `jsfiles.txt` come from the **Historical Discovery** page — reuse them here
-
-> [!warning]
-> Keep all activity inside your authorized scope.
