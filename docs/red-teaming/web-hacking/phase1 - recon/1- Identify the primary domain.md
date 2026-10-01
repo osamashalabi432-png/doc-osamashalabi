@@ -2,6 +2,6 @@
 - to search for ASNs associated with an organization name
 
  ```bash
- amass intel -org "Target Company" 
+ amass assoc -org "Target Company" 
  ```
  
