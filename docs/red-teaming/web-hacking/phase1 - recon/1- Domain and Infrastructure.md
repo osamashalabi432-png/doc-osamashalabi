@@ -15,7 +15,7 @@ dig +short onetec.com
 ---
 ## 2. Enumerate subdomains
  
-- [x] Find all subdomains under the root
+- [ ] Find all subdomains under the root
 ```bash
 subfinder -d onetec.com -o subs.txt
 ```
@@ -29,7 +29,7 @@ assetfinder --subs-only onetec.com
  ---
  ## Resolve discovered domains
  
-- [x] Check which subdomains point to a real IP
+- [ ] Check which subdomains point to a real IP
 ```bash
 dnsx -l subs.txt 
 ```
@@ -37,7 +37,7 @@ dnsx -l subs.txt
  
 ## 4. Identify live HTTP and HTTPS services
  
-- [x] Find which resolved hosts serve a working site
+- [ ] Find which resolved hosts serve a working site
 ```bash
 httpx -l resolved.txt -sc -title -o live.txt
 ```
@@ -46,7 +46,7 @@ httpx -l resolved.txt -sc -title -o live.txt
  
 ## 5. Identify exposed ports and services
  
-- [x] Scan for open ports
+- [ ] Scan for open ports
 ```bash
 nmap -sV onetec.com
 ```
@@ -61,7 +61,7 @@ naabu -l resolved.txt -o ports.txt
  
 ## 6. Identify IP addresses and hosting providers
  
-- [x] Find the IPs and who hosts them
+- [ ] Find the IPs and who hosts them
 ```bash
 dig +short onetec.com
 whois <IP-address>
@@ -72,7 +72,7 @@ asnmap -d onetec.com
  
 ## 7. Review DNS records
  
-- [x] Pull the main record types
+- [ ] Pull the main record types
 ```bash
 dig +short A onetec.com
 dig +short MX onetec.com

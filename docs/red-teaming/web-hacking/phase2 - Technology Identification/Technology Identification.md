@@ -49,12 +49,6 @@ cmseek -u https://onetec.com
 - [ ] Detect front-end frameworks (React, Vue, Angular)
 
 ```bash
-wappalyzer https://onetec.com
-```
-
-Or inspect the page source for framework signatures:
-
-```bash
 curl -s https://onetec.com | grep -iE "react|vue|angular|next|nuxt"
 ```
 
@@ -93,12 +87,6 @@ Look for JWTs in cookies/storage, and for `/oauth`, `/saml`, `/login` paths in y
 - [ ] Find external services (analytics, CDNs, payment, chat)
 
 ```bash
-wappalyzer https://onetec.com
-```
-
-Or pull external domains from the page:
-
-```bash
 curl -s https://onetec.com | grep -Eo "https?://[a-zA-Z0-9./?=_-]*" | sort -u
 ```
 
@@ -107,10 +95,6 @@ curl -s https://onetec.com | grep -Eo "https?://[a-zA-Z0-9./?=_-]*" | sort -u
 ## 9. Identify exposed software versions
 
 - [ ] Find version numbers that leak in headers or pages
-
-```bash
-whatweb -a 3 https://onetec.com
-```
 
 ```bash
 nuclei -u https://onetec.com -t technologies/
