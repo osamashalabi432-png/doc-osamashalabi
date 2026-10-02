@@ -135,6 +135,7 @@ nav:
       - Protected Servers: cyber-security-engineer/waf/fortiweb/protected-servers.md
       - Policies: cyber-security-engineer/waf/fortiweb/policies.md
       - References: cyber-security-engineer/waf/fortiweb/references.md
+      - Intern Lab: cyber-security-engineer/waf/fortiweb/Intern lab.md
   - Endpoint Detection & Response:
     - Overview: cyber-security-engineer/edr/index.md
     - FortiEDR:
@@ -203,6 +204,9 @@ nav:
       - "1. Cloud Computing Concepts & Architectures": cyber-security-engineer/cloud/CCSK/chapter1 - Cloud Computing Concepts& Architectures.md
       - "2. Cloud Governance": cyber-security-engineer/cloud/CCSK/chapter2 - cloud governance.md
       - "3. Risk, Audit and Compliance": cyber-security-engineer/cloud/CCSK/chapter3 - Risk, Audit and Compliance.md
+    - CCSP:
+      - Plan: cyber-security-engineer/cloud/CCSP/Plan.md
+      - "Chapter 1": cyber-security-engineer/cloud/CCSP/Chapter 1.md
   - Virtualization & Containers:
     - Overview: cyber-security-engineer/virtualization-containers/index.md
     - Concepts: cyber-security-engineer/virtualization-containers/concepts.md
@@ -303,6 +307,12 @@ nav:
     - Credential Attacks: red-teaming/web-hacking/credential-attacks.md
     - Tools: red-teaming/web-hacking/tools.md
     - Labs: red-teaming/web-hacking/labs.md
+    - "Phase 1 - Recon":
+      - "1. Domain and Infrastructure": red-teaming/web-hacking/phase1 - recon/1- Domain and Infrastructure.md
+      - "2. Historical Discovery": red-teaming/web-hacking/phase1 - recon/2- Historical discovery.md
+    - "Phase 2 - Technology Identification": red-teaming/web-hacking/phase2 - Technology Identification/Technology Identification.md
+    - "Phase 3 - Attack Surface Mapping": red-teaming/web-hacking/phase3 - Attack Surface Mapping/Attack Surface Mapping.md
+    - "Phase 4 - Content Discovery": red-teaming/web-hacking/phase4 - Content Discovery/Content Discovery.md
   - OS Hacking:
     - Overview: red-teaming/os-hacking/index.md
     - Linux:
