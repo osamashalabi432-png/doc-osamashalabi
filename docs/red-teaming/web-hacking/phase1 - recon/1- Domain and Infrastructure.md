@@ -141,5 +141,5 @@ grep -E "dev|staging|test|uat|qa|preprod" subs.txt
 
 ```bash
 
-echo | openssl s_client -connect 213.6.182.198:8443 2>/dev/null | openssl x509 -noout -text
+echo | openssl s_client -connect <IP>:<PORT> 2>/dev/null | openssl x509 -noout -text
 ```
