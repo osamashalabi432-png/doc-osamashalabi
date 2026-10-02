@@ -135,3 +135,11 @@ wafw00f https://onetec.com -a
 ```bash
 grep -E "dev|staging|test|uat|qa|preprod" subs.txt
 ```
+---
+## 13. Identify the certificate Type
+- [ ] Identify the certificate infromation 
+
+```bash
+
+echo | openssl s_client -connect 213.6.182.198:8443 2>/dev/null | openssl x509 -noout -text
+```
