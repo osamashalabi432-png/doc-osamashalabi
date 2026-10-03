@@ -1,13 +1,13 @@
 ### Open the Agent settings Tool
 
 **Step 1 – Open the agent policy settings**
-Go to Agents > Agent Policy > Create Policy > Platform Behaviors > Agent settings tile. [ivanti](https://help.ivanti.com/ht/help/en_us/CLOUD/vNow/agent-policy-settings.htm)
+
+ - Go to Agents > Agent Policy > Create Policy > Platform Behaviors > Agent settings tile. [ivanti](https://help.ivanti.com/ht/help/en_us/CLOUD/vNow/agent-policy-settings.htm)
 (On some versions, the path is Agents > Agent Policies > Create Policy > Agent settings tab.)
 
+- Click the **Peer download controls** section to open it.
 
-**Step 2 – Turn on Patch Management in the policy**
-Make sure the Patch Management capability is enabled when you create the agent policy. [ivanti](https://help.ivanti.com/ht/help/en_US/cloud/vnow/patch-getting-started.htm)
-
+---
 
 **Step 3 – Pick a peer mode under "Peer Download Controls"**
 
