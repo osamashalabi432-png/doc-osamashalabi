@@ -21,6 +21,7 @@ sudo apt install seclists
 With `ffuf`:
 
 ```bash
+
 ffuf -u https://onetec.com/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -mc 200,204,301,302,307,401,403 -recursion -recursion-depth 5
 ```
 
