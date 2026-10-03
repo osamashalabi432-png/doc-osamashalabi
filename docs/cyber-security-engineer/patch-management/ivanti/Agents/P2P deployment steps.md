@@ -1,11 +1,29 @@
 ### Open the Agent settings Tool
 
-1. Go to **Agents → Agent Policies → Create Policy**. Ivanti's Agent Policies documentation confirms that you create the policy there, select capabilities, then go to the **Agent settings** tab.      [Ivanti — Agent Policies](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-policies.htm?utm_source=chatgpt.com)
+**Step 1 – Open the agent policy settings**
 
-2. Create your normal branch policy, for example `POL-BRANCH-ENDPOINT`. Enable the **Patch Management** capability. Then go to **Agent settings → Download Controls → Peer download controls** and choose **Client Only**. Ivanti defines Client Only as downloading content from peers but not sharing content with other peers.
+ - Go to Agents > Agent Policy > Create Policy > Platform Behaviors > Agent settings tile. [ivanti](https://help.ivanti.com/ht/help/en_us/CLOUD/vNow/agent-policy-settings.htm)
+(On some versions, the path is Agents > Agent Policies > Create Policy > Agent settings tab.)
 
-3. Create another policy for the machines you want to act as your P2P sources, for example `POL-BRANCH-P2P`. Again enable **Patch Management**, then go to **Agent settings → Download Controls → Peer download controls** and choose **Client and Server**. That means the machine can both obtain content from peers and share cached content with other endpoints.
+- Click the **Peer download controls** section to open it.
 
-4. Ensure local firewalls allow **TCP 33121, TCP 33122, UDP 33121 and UDP 33122** between the peer machines and other devices. Ivanti explicitly requires these ports for peer downloads.      [Ivanti — Required URLs, IP addresses and ports](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/platform-allowlist.htm?utm_source=chatgpt.com)
+---
 
-5. Deploy the normal Ivanti Neurons Agent to both types of machines. There is **no separate P2P agent installer**. During manual or push installation, you select which Agent Policy the endpoint receives. Ivanti documents that under Agent Deployment.      [Ivanti — Agent Deployment](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-deployment.htm?utm_source=chatgpt.com)
+**Step 3 – Pick a peer mode under "Peer Download Controls"**
+
+The main options are:
+- **Disabled** – no sharing at all
+- **Client only** – the device downloads from peers, but does not share
+- **Server only** – the device shares with peers, but does not download from them
+
+These three modes are listed in Ivanti's docs. Your version may also show a combined option. [ivanti](https://help.ivanti.com/ht/help/it_IT/CLOUD/vNow/agent-policy-settings.htm)
+
+**Step 4 – Set bandwidth limits (optional)**
+
+You can limit how much of the network the agent uses. There's a separate percentage for the local network (LAN) and for the wide network (WAN). [ivanti](https://help.ivanti.com/ht/help/en_US/cloud/vnow/agent-policy-settings.htm)
+
+**Step 5 – Link your patch configuration to the policy**
+
+On the Associations tab, connect your patch configuration to the custom agent policy that has patch management turned on. [ivanti](https://help.ivanti.com/ht/help/en_US/cloud/vnow/patch-getting-started.htm)
+
+Devices pick up the new settings the next time their agents check in    [Ivanti — Agent Deployment](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-deployment.htm?utm_source=chatgpt.com)
