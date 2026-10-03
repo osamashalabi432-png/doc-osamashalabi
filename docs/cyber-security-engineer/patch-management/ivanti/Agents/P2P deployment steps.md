@@ -1,4 +1,4 @@
-For SABIL, the configuration would work like this:
+### Open the Agent settings Tool
 
 1. Go to **Agents → Agent Policies → Create Policy**. Ivanti's Agent Policies documentation confirms that you create the policy there, select capabilities, then go to the **Agent settings** tab.      [Ivanti — Agent Policies](https://help.ivanti.com/ht/help/en_US/CLOUD/vNow/agent-policies.htm?utm_source=chatgpt.com)
 
