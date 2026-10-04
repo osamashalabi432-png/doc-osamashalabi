@@ -7,16 +7,26 @@
 
 - Click the **Peer download controls** section to open it.
 
----
 
-**Step 3 – Pick a peer mode under "Peer Download Controls"**
+- Pick a peer mode under "Peer Download Controls"
 
-The main options are:
-- **Disabled** – no sharing at all
-- **Client only** – the device downloads from peers, but does not share
-- **Server only** – the device shares with peers, but does not download from them
+Step 1 – Create the "Client" policy
 
-These three modes are listed in Ivanti's docs. Your version may also show a combined option. [ivanti](https://help.ivanti.com/ht/help/it_IT/CLOUD/vNow/agent-policy-settings.htm)
+Create a new agent policy. Name it something clear, like **P2P-Client**.
+
+In the Agent settings tile, set peer mode to **Client Only**.
+
+Turn on **Patch Management**, set your bandwidth limits, and save.
+
+### Step 2 – Create the "Server" policy
+
+Create a second policy. Name it **P2P-Server**.
+
+Set peer mode to **Client and Server**.
+
+Keep everything else the **same** as the Client policy. Same capabilities, same bandwidth, same reboot setting. The only difference should be the peer mode.
+
+Save it.
 
 **Step 4 – Set bandwidth limits (optional)**
 
