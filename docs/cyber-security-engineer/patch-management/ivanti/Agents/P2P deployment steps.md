@@ -1,49 +1,51 @@
-### Part 1 – Create the Client policy
+## Part 1 – Create the Client policy
 
-**1.** Go to **Agents > Agent Policy > Create Policy**.
-**2.** Name it **P2P-Client**.
-**3.** Turn on the **Patch Management** capability.
-**4.** Go to **Platform Behaviors > Agent settings** tile.
-**5.** Open **Peer download controls**. Choose **Client Only**.
-**6.** Set bandwidth:
+- Go to **Agents > Agent Policy > Create Policy**
+- Name it `P2P-Client`
+- Turn on the **Patch Management** capability
+- Go to **Platform Behaviors > Agent settings** tile
+- Open **Peer download controls** → choose **Client Only**
+- Set bandwidth:
+    1. LAN Utilization: **50%**
+    2. WAN Utilization: **20–30%**
+    
+- Agent Automatic Update → **Request reboots when needed**
+- Click **OK**, then **save** the policy
 
-- LAN Utilization: **50%**
-- WAN Utilization: **20–30%**
+## Part 2 – Create the Server policy
 
-**7.** Agent Automatic Update: choose **Request reboots when needed**.
-**8.** Click **OK**, then **save** the policy.
+- Go to **Agents > Agent Policy > Create Policy**
+- Name it `P2P-Server`
+- Turn on the **Patch Management** capability
+- Go to **Platform Behaviors > Agent settings** tile
+- Open **Peer download controls** → choose **Client and Server**
+- Use the **same** bandwidth and reboot settings as `P2P-Client`
+- Click **OK**, then **save** the policy
 
-### Part 2 – Create the Server policy
+> [!tip] Both policies should be identical. The **only** difference is the peer mode.
 
-**1.** Go to **Agents > Agent Policy > Create Policy** again.
-**2.** Name it **P2P-Server**.
-**3.** Turn on the **Patch Management** capability.
-**4.** Go to **Platform Behaviors > Agent settings** tile.
-**5.** Open **Peer download controls**. Choose **Client and Server**.
-**6.** Set the **same** bandwidth and reboot settings as the Client policy.
-**7.** Click **OK**, then **save** the policy.
+## Part 3 – Link the patch configuration
 
-### Part 3 – Link your patch configuration
+- Go to **Patch Management** → open your patch configuration
+- Open the **Associations** tab
+- Link it to **both** `P2P-Client` and `P2P-Server`
+- Save
 
-**1.** Go to **Patch Management** and open your patch configuration.
-**2.** Open the **Associations** tab.
-**3.** Link it to **P2P-Client** and **P2P-Server**. Both of them.
-**4.** Save.
+## Part 4 – Assign the policies to devices
 
-### Part 4 – Assign the policies to devices
+- Go to **Agents > Agent Deployment**
+- Open the **Automated policy assignment** tab
+- Set **Default policy** → `P2P-Client` (every device becomes a client)
+- Go to **Device exceptions**
+- Add the one server device you picked in each subnet → give it `P2P-Server`
+- Save
 
-**1.** Go to **Agents > Agent Deployment**.
-**2.** Open the **Automated policy assignment** tab.
-**3.** Set the **Default policy** to **P2P-Client**. Now every device is a client.
-**4.** Go to **Device exceptions**.
-**5.** Add each server device from your list (step 3). Give each one **P2P-Server**.
-**6.** Save.
+> [!note] Device exceptions override the default policy. That's how only the chosen device becomes the server.
 
-### Part 7 – Check it worked
+## Part 5 – Check it worked
 
-**1.** Wait for the devices to check in. This can take a little time.
-**2.** Open the agent management list and check a few devices:
-- Server devices should show **P2P-Server**
-- All others should show **P2P-Client**
-
-**3.** Deploy a test patch to one subnet. Watch whether the clients get it.
+- Wait for devices to check in (can take a little time)
+- Open the agent management list and check a few devices:
+    1. Server devices → `P2P-Server`
+    2. All others → `P2P-Client`
+- Deploy a test patch to one subnet and watch whether the clients get it
