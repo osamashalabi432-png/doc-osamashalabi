@@ -31,12 +31,6 @@ With `feroxbuster` (recursive by default):
 feroxbuster -u https://onetec.com -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -d 2
 ```
 
-> [!tip] Useful ffuf options
-> - `-mc` match status codes · `-fc` filter out codes
-> - `-fs` filter by response size (hide junk) · `-ac` auto-calibrate
-> - `-t 50` threads · `-recursion` dig into found dirs
-> - `-e .php,.html` append extensions
-
 ---
 
 ## 2. Enumerate files
