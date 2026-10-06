@@ -30,3 +30,9 @@
  └─────────┘
 ```
 
+---
+#### How we will gather info from the Clients
+- by using the Remote Probe, so the probe collects data locally and sends it back to the MSP's central PRTG 
+
+---
+
