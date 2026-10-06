@@ -55,3 +55,12 @@ Customer Remote Probe
 Our PRTG Core
 ```
 
+
+
+---
+### Step 3 — Allow remote probes in PRTG
+- Log into your PRTG web console.
+
+- go to Setup → System Administration → Core & Probes → Probe Connection Settings
+
+- Change the probe connection setting from: local probe only to All IP addresses available on this computer 
