@@ -42,4 +42,16 @@ PRTG Core at your company → Remote Probe at customer → monitor one firewall 
 #### Step 1 — Prepare one Windows machine at the customer
 - we will create a small windows VM inside the customer's network for the remote Probe
 - aessler currently supports Windows Server 2016/2019/2022/2025 and Windows 10/11, with .NET Framework 4.7.2 or later; Paessler recommends .NET 4.8 for new installations
-- 
+
+#### Step 2 — Make your PRTG Core reachable
+- the remote probe initiates the connection toward our PRTG Core.
+
+- for classic Remote Probe, the default connection is:
+```
+Customer Remote Probe
+        |
+        | TCP 23560
+        v
+Our PRTG Core
+```
+
