@@ -24,7 +24,31 @@ Are my firewalls, switches, servers, applications, links, and services healthy �
 	8. the web interface
 
 ##### 2. Probe
-- this is the monitoring engine, it communicates with your devices and retrieves information 
+- this is the monitoring engine like it's an actual software that performs monitoring, it communicates with your devices and retrieves information 
+
+- It runs as a service on a machine, receives monitoring instructions from the PRTG core sever
+
 - there is two types of probe:
 	1. local probe
 	2. remote probe
+
+```
+HQ
+PRTG Core + Local Probe
+        │
+        ├── Firewall
+        ├── Switches
+        └── Servers
+
+
+Branch Office
+Remote Probe
+        │
+        ├── Firewall
+        ├── Switches
+        └── Servers
+```
+
+##### 3. Sensor
+- monitoring element that you configure inside the PRTG
+- the sensor tells the probe what to monitor and how to monitor it
