@@ -51,4 +51,7 @@ Remote Probe
 
 ##### 3. Sensor
 - monitoring element that you configure inside the PRTG
+
 - the sensor tells the probe what to monitor and how to monitor it
+
+- Paessler currently provides **250+ pre-configured sensor types**, covering network devices, servers, applications, virtualization platforms, and more.
