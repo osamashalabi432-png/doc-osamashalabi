@@ -71,3 +71,8 @@ PRTG  ────────────────> FortiGate
       <────────────────
            SNMP Response
 ```
+
+- PRTG is periodically asks the device for information 
+
+- for windows devices we will open WSMan for WMI connections
+
