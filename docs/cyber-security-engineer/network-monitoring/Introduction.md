@@ -55,3 +55,19 @@ Remote Probe
 - the sensor tells the probe what to monitor and how to monitor it
 
 - Paessler currently provides **250+ pre-configured sensor types**, covering network devices, servers, applications, virtualization platforms, and more.
+
+---
+### How does PRTG works?
+- PRTG supports several monitoring methods, for network equipment, one the most common is SNMP
+
+```
+           SNMP GET
+PRTG  ────────────────> FortiGate
+                         10.10.10.1
+
+                         CPU = 42%
+                         RAM = 61%
+                         Interface = Up
+      <────────────────
+           SNMP Response
+```
