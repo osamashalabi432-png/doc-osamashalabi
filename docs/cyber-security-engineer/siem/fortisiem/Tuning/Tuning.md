@@ -85,15 +85,14 @@ FortiSIEM ships with **over 500 system rules** in **RESOURCES > Rules**. Do not 
 
 Use the search box in **RESOURCES > Rules** with these keywords.
 
-|   |   |   |
-|---|---|---|
-|Log source you have|Search keywords|What you catch|
-|Active Directory / Windows|login, brute force, account locked, privileged, group change|Password attacks, admin abuse|
-|FortiGate / firewall|scan, denied, malware, botnet, IPS|Scans, C2 traffic, exploits|
-|VPN|VPN, impossible travel, foreign|Stolen accounts, odd logins|
-|EDR / antivirus|malware, virus, ransomware|Infected hosts|
-|Proxy / DNS|malware domain, DGA, suspicious URL|Phishing, C2 domains|
-|Servers (Linux)|sudo, root, SSH|Privilege abuse|
+| Log source you have        | Search keywords                                              | What you catch                |
+| -------------------------- | ------------------------------------------------------------ | ----------------------------- |
+| Active Directory / Windows | login, brute force, account locked, privileged, group change | Password attacks, admin abuse |
+| FortiGate / firewall       | scan, denied, malware, botnet, IPS                           | Scans, C2 traffic, exploits   |
+| VPN                        | VPN, impossible travel, foreign                              | Stolen accounts, odd logins   |
+| EDR / antivirus            | malware, virus, ransomware                                   | Infected hosts                |
+| Proxy / DNS                | malware domain, DGA, suspicious URL                          | Phishing, C2 domains          |
+| Servers (Linux)            | sudo, root, SSH                                              | Privilege abuse               |
 
 ### 3.2 Activate rules
 
@@ -191,12 +190,11 @@ A rule condition has three parts:
 
 **Fortinet examples:**
 
-|   |   |   |
-|---|---|---|
-|Goal|Group By|Aggregate|
-|10 or more events|none|COUNT(Matched events) >= 10|
-|One source hits 100+ destinations (scan)|Source IP|COUNT(DISTINCT Destination IP) >= 100|
-|One workstation logs in to 5+ accounts on one server|Source IP, Destination IP|COUNT(DISTINCT user) >= 5|
+| Goal                                                 | Group By                  | Aggregate                             |
+| ---------------------------------------------------- | ------------------------- | ------------------------------------- |
+| 10 or more events                                    | none                      | COUNT(Matched events) >= 10           |
+| One source hits 100+ destinations (scan)             | Source IP                 | COUNT(DISTINCT Destination IP) >= 100 |
+| One workstation logs in to 5+ accounts on one server | Source IP, Destination IP | COUNT(DISTINCT user) >= 5             |
 
 You can chain two patterns with **AND**, **OR**, **FOLLOWED-BY**, **AND-NOT** or **NOT-FOLLOWED-BY**. Example: "5 login failures **NOT-FOLLOWED-BY** a success" tells you the attack did not work.
 
