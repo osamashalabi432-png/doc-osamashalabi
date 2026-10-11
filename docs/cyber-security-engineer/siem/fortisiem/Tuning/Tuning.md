@@ -29,7 +29,7 @@ FortiSIEM knows where public IPs are. It does not know your internal sites.
 2. Click **New**, enter the **IP/IP Range** and its **Location**.
 3. Click **Save**, then **Apply**.
 
-### 1.5 Load your users
+### 1.4 Load your users
 
 Incidents are more useful when they show a real person, not just an account name.
 
