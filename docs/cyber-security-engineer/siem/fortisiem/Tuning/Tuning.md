@@ -14,28 +14,6 @@ Many rules and reports use **My Home** to decide what is "foreign". By default i
 ![](../../../../attachments/Pasted%20image%2020261011163448.png)
 
 
-### 1.2 Fill your CMDB groups automatically
-
-Built-in groups fill from discovery. Your own groups do not. Use **Dynamic CMDB Group** rules so they stay correct.
-
-1. Go to **ADMIN > Settings > Discovery > CMDB Group**.
-2. Click **New**.
-3. Set the match: **Vendor**, **Model**, **Host Name** or **IP Range**.
-4. Pick the target **Group** or **Biz Service**.
-5. Click **Save**, then **Apply**.
-
-New devices found by discovery will also land in the right group.
-
-**Groups worth creating first:**
-
-- Domain controllers
-- DNS servers
-- Vulnerability scanners
-- Critical servers (finance, HR, ERP)
-- Admin / jump hosts
-
-Scanners and DNS servers cause many false positives. Having them in a group lets you exclude them cleanly later.
-
 ### 1.3 Create business services
 
 A **business service** groups the devices behind one business function (for example "Email" or "Payroll"). Incidents get tagged with the business service they hit, so analysts see business impact at once.
