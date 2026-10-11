@@ -14,14 +14,14 @@ Many rules and reports use **My Home** to decide what is "foreign". By default i
 ![](../../../../attachments/Pasted%20image%2020261011163448.png)
 
 
-### 1.3 Create business services
+### 1.2 Create business services
 
 A **business service** groups the devices behind one business function (for example "Email" or "Payroll"). Incidents get tagged with the business service they hit, so analysts see business impact at once.
 
 - Create them under **CMDB > Business Services**.
 - See [Creating Business Services](https://docs.fortinet.com/document/fortisiem/7.4.1/user-guide/386311/creating-business-services).
 
-### 1.4 Set locations for private IPs
+### 1.3 Set locations for private IPs
 
 FortiSIEM knows where public IPs are. It does not know your internal sites.
 
