@@ -18,3 +18,8 @@ df -h
 ```bash
 /opt/phoenix/bin/phProvisionCollector --update admin 'YOUR_PASSWORD' <SUPERVISOR-ip> Super forti-coll-01
 ```
+
+- check the logs:
+```bash
+tail -n 50 /opt/phoenix/log/phoenix.log
+```
