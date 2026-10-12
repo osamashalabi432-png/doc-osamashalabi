@@ -84,11 +84,20 @@ FortiSIEM ships with **over 500 system rules** in **RESOURCES > Rules**. Do not 
 ### 3.1 Match rules to your log sources
 
 Use the search box in **RESOURCES > Rules** with these keywords.
-1. Entra ID
+1. Entra ID -> all the list
 2. VPN
-3. Meraki
-4. IPS
-5. defender
+	1. Brute Force App Login Success
+	2. Concurrent Successful VPN Authentications To Same Account From Different Countries
+	3. Failed VPN Logon From Outside My Country _(change “My Home Country” first)_
+	4. Multiple Logon Failures: VPN
+	5. Outbreak: FortiOS SSLVPN Heap Buffer Overflow attack - CVE-2022-42475
+	6. Repeated Multiple Logon Failures: VPN
+	7. Successful VPN Logon From Outside My Country _(change “My Home Country” first)_
+	8. Uncommon VPN Login
+	
+3. Meraki -> all the list
+4. IPS -> all except the p2p traffic
+5. defender 
 6. botnet
 7. ransomware
 8. exfiltration
