@@ -96,11 +96,8 @@ Use the search box in **RESOURCES > Rules** with these keywords.
 	8. Uncommon VPN Login
 	
 3. Meraki -> all the list
-4. IPS -> all except the p2p traffic
-5. defender 
-6. botnet
-7. ransomware
-8. exfiltration
+4. IPS -> all except the p2p traffic 
+5. exfiltration
 
 | Log source you have        | Search keywords                                              | What you catch                |
 | -------------------------- | ------------------------------------------------------------ | ----------------------------- |
