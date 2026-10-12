@@ -84,6 +84,12 @@ FortiSIEM ships with **over 500 system rules** in **RESOURCES > Rules**. Do not 
 ### 3.1 Match rules to your log sources
 
 Use the search box in **RESOURCES > Rules** with these keywords.
+1. Entra ID
+2. microsoft
+3. VPN
+4. fortigate
+5. IPS
+6. 
 
 | Log source you have        | Search keywords                                              | What you catch                |
 | -------------------------- | ------------------------------------------------------------ | ----------------------------- |
