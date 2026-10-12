@@ -97,7 +97,15 @@ Use the search box in **RESOURCES > Rules** with these keywords.
 	
 3. Meraki -> all the list
 4. IPS -> all except the p2p traffic 
-5. exfiltration
+5. exfiltration -> all the list
+	1. Blocklist User Agent Match _(needs web logs that include the browser “user agent”)_
+	2. Excessive End User Mail To Unauthorized Mail Gateways _(make sure your real mail servers are in CMDB first)
+	3. Large Outbound Transfer ← the main exfiltration rule
+	4. Large Outbound Transfer To Outside My Country _(change “My Home Country” first)_
+	5. Malware found but not remediated _(works with most antivirus and EDR products)_
+	6. Outbreak: DARKSIDE Domain Traffic Detected
+	7. Outbreak: DARKSIDE Ransomware Inbound Network Traffic Detected
+	8. Outbreak: DARKSIDE Ransomware Outbound Network Traffic Detected
 
 | Log source you have        | Search keywords                                              | What you catch                |
 | -------------------------- | ------------------------------------------------------------ | ----------------------------- |
