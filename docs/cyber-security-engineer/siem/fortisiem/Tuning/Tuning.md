@@ -85,14 +85,13 @@ FortiSIEM ships with **over 500 system rules** in **RESOURCES > Rules**. Do not 
 
 Use the search box in **RESOURCES > Rules** with these keywords.
 1. Entra ID
-2. windows
-3. VPN
-4. fortigate
-5. IPS
-6. defender
-7. botnet
-8. ransomware
-9. exfiltration
+2. VPN
+3. Meraki
+4. IPS
+5. defender
+6. botnet
+7. ransomware
+8. exfiltration
 
 | Log source you have        | Search keywords                                              | What you catch                |
 | -------------------------- | ------------------------------------------------------------ | ----------------------------- |
