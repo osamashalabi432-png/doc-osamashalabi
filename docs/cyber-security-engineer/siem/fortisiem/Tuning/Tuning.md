@@ -85,7 +85,7 @@ FortiSIEM ships with **over 500 system rules** in **RESOURCES > Rules**. Do not 
 
 Use the search box in **RESOURCES > Rules** with these keywords.
 1. Entra ID
-2. microsoft
+2. windows
 3. VPN
 4. fortigate
 5. IPS
