@@ -89,7 +89,10 @@ Use the search box in **RESOURCES > Rules** with these keywords.
 3. VPN
 4. fortigate
 5. IPS
-6. 
+6. defender
+7. botnet
+8. ransomware
+9. exfiltration
 
 | Log source you have        | Search keywords                                              | What you catch                |
 | -------------------------- | ------------------------------------------------------------ | ----------------------------- |
