@@ -39,43 +39,6 @@ Incidents are more useful when they show a real person, not just an account name
 
 Source: [Advanced Operations: CMDB](https://docs.fortinet.com/document/fortisiem/7.4.1/user-guide/47862/cmdb), [Incidents and Cases](https://docs.fortinet.com/document/fortisiem/7.4.1/user-guide/878341/incidents-and-cases)
 
-## Step 2: Set up watch lists
-
-A **watch list** is a list of "suspicious things" (IPs, users, hosts) that FortiSIEM keeps up to date by itself. When a rule fires, it can add the attacker IP or user to a watch list. Other rules can then use that list.
-
-**Why it matters:** one weak signal alone is noise. The same IP showing up on a watch list _and_ hitting a server is a real incident.
-
-### 2.1 Review the built-in watch lists
-
-- Go to **RESOURCES > Watch Lists**.
-- FortiSIEM already has watch lists filled by system rules. Check they are filling up after a few days.
-
-### 2.2 Create your own watch list
-
-1. Go to **RESOURCES > Watch Lists** and click **New**.
-2. Give it a name and pick the **Type** (for example IP or string).
-3. Set how long an entry stays. If the rule does not fire again for that value in that time, the entry is removed.
-
-**Good first watch lists:**
-
-- Users with repeated failed logins
-- Hosts that hit a malware IP or domain
-- IPs that scanned your network
-
-### 2.3 Link a watch list to a rule
-
-1. Open the rule in **RESOURCES > Rules** and click **Edit**.
-2. Go to **Step 3: Define Action** and click the edit icon next to **Watch List**.
-3. Pick the **Incident Attribute** to store (for example Source IP).
-4. Move the watch list from **Available** to **Selected** and save.
-
-**Watch out:** the watch list **Type** must match the attribute type. An IP watch list cannot take a string attribute.
-
-### 2.4 Use the watch list in other rules
-
-In a rule condition, filter on an attribute **IN** the watch list. Example: "Source IP IN _Scanner IPs_ watch list AND destination is a critical server".
-
-Source: [Watch Lists](https://docs.fortinet.com/document/fortisiem/7.4.1/user-guide/297178/watch-lists), [Creating Rules](https://docs.fortinet.com/document/fortisiem/7.4.1/user-guide/903877/creating-rules)
 
 ## Step 3: Turn on the right rules
 
@@ -152,13 +115,13 @@ Source: [Rules](https://docs.fortinet.com/document/fortisiem/7.4.1/user-guide/79
 
 This is the most important step. Fortinet gives **four ways** to stop a noisy rule. Pick the right one for the problem.
 
-|   |   |   |
-|---|---|---|
-|Problem|Best fix|Where|
-|Rule fires for a whole type of device that is normal (for example DNS servers)|**Modify the rule**|INCIDENTS > List > Actions > Edit Rule|
-|Rule fires for one known, safe value (one IP, one user)|**Rule exception**|INCIDENTS > List > Actions > Edit Rule Exception|
-|The event itself is useless for detection|**Event dropping rule**|INCIDENTS > List > Actions > Create Event Dropping Rule|
-|Performance rule fires too early (CPU, memory, disk)|**Adjust the threshold**|ADMIN > Device Support > Custom Property|
+
+| Problem                                                                        | Best fix                 | Where                                                   |
+| ------------------------------------------------------------------------------ | ------------------------ | ------------------------------------------------------- |
+| Rule fires for a whole type of device that is normal (for example DNS servers) | **Modify the rule**      | INCIDENTS > List > Actions > Edit Rule                  |
+| Rule fires for one known, safe value (one IP, one user)                        | **Rule exception**       | INCIDENTS > List > Actions > Edit Rule Exception        |
+| The event itself is useless for detection                                      | **Event dropping rule**  | INCIDENTS > List > Actions > Create Event Dropping Rule |
+| Performance rule fires too early (CPU, memory, disk)                           | **Adjust the threshold** | ADMIN > Device Support > Custom Property                |
 
 ### 4.1 Modify the rule (preferred)
 
