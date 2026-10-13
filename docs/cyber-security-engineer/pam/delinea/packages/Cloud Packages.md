@@ -1,0 +1,1 @@
+- for the cloud option Delinea has 3 options 
