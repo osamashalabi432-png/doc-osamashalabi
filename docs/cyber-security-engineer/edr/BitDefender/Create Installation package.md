@@ -6,3 +6,5 @@
 
 - let's take a closer look on the available modules and what each one of them do
 ![](../../../attachments/Pasted%20image%2020261014150509.png)
+- Anti-malware: basic signature anti virus
+- Advanced Threat Control: 
