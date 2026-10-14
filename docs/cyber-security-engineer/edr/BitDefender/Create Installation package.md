@@ -7,4 +7,5 @@
 - let's take a closer look on the available modules and what each one of them do
 ![](../../../attachments/Pasted%20image%2020261014150509.png)
 - Anti-malware: basic signature anti virus
-- Advanced Threat Control: 
+- Advanced Threat Control: monitoring how programs behave while they run
+- Advanced Anti-Exploit: protects programs from their own bug like 
