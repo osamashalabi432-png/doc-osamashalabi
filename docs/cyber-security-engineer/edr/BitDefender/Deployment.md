@@ -38,3 +38,7 @@
 - first option:
 ![](../../../attachments/Pasted%20image%2020261015111129.png)
 there are multiple installer files for each OS and multiple variations for Windows, Linux and MacOS
+
+
+- for the second option, you can send a link through email, and there are rings 
+![](../../../attachments/Pasted%20image%2020261015111328.png)
