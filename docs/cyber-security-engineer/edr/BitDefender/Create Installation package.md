@@ -19,3 +19,9 @@
 - power user: Lets a local admin change Bitdefender settings directly on the computer, protected by a password
 - EDR Sensor: Collects detailed information about what happens on the computer. This lets you investigate attacks in GravityZone
 
+
+- then we have the scan mode:
+![](../../../attachments/Pasted%20image%2020261015095908.png)
+1. local scan: happens on the computer itself
+2. hybrid scan: The computer keeps a light database. Part of the work is sent to Bitdefender’s cloud
+3. central scan: The scanning is sent to a Security Server that you install in your own network or a special virtual machine
