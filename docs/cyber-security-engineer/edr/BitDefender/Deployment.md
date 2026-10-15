@@ -27,3 +27,14 @@
 2. hybrid scan: The computer keeps a light database. Part of the work is sent to Bitdefender’s cloud
 3. central scan: The scanning is sent to a Security Server that you install in your own network or a special virtual machine
 
+---
+### Installing the package
+
+![](../../../attachments/Pasted%20image%2020261015111002.png)
+- there is 2 options here
+	1. normal download file
+	2. download the file via link
+
+- first option:
+![](../../../attachments/Pasted%20image%2020261015111129.png)
+there are multiple installer files for each OS and multiple variations for Windows, Linux and MacOS
