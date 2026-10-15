@@ -1,3 +1,4 @@
+### Create Installation Package
 1. first we go to Network > Installation Package > Create
 ![](../../../attachments/Pasted%20image%2020261014150210.png)
 
@@ -25,3 +26,4 @@
 1. local scan: happens on the computer itself
 2. hybrid scan: The computer keeps a light database. Part of the work is sent to Bitdefender’s cloud
 3. central scan: The scanning is sent to a Security Server that you install in your own network or a special virtual machine
+
