@@ -27,4 +27,18 @@ tail -n 50 /opt/phoenix/log/phoenix.log
 ---
 ### Check health inside FortiSIEM GUI
 
-- Check the system health page: ***ADMIN > Health > Cloud health***
+Check the system health page: ***ADMIN > Health > Cloud health***
+
+make sure these are correct:
+1. Health status to be normal
+2. CPU, memory and disk should not be close to full
+3. EPS (Event per second) should be above zero
+
+### Check collector
+
+Go to ***ADMIN > Health > Collector Health***
+
+For each Collector, check:
+- **Status** is **Up**
+- **Last Status Update** time is recent (a few minutes ago)
+- **EPS** is above zero
