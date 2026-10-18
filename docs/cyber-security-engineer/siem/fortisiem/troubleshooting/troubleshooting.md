@@ -23,3 +23,8 @@ df -h
 ```bash
 tail -n 50 /opt/phoenix/log/phoenix.log
 ```
+
+---
+### Check health inside FortiSIEM GUI
+
+- Check the system health page: ***ADMIN > Health > Cloud health***
