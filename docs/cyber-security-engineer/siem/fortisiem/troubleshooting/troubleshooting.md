@@ -43,3 +43,8 @@ For each Collector, check:
 - **Status** is **Up**
 - **Last Status Update** time is recent (a few minutes ago)
 - **EPS** is above zero
+
+---
+### Confirm logs are actually arriving
+
+- Go to **ANALYTICS** and run a search for the **last 10–15 minutes** with no filter.
