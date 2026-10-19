@@ -34,6 +34,7 @@ make sure these are correct:
 2. CPU, memory and disk should not be close to full
 3. EPS (Event per second) should be above zero
 
+---
 ### Check collector
 
 Go to ***ADMIN > Health > Collector Health***
