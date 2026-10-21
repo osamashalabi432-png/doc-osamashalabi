@@ -5,3 +5,5 @@
 	- device reports: which patches are missing the most across company 
 	- vulnerability reports: which security risks do we have and where
 	- deployment history: what did we patch and did it work
+
+![](../../../attachments/Pasted%20image%2020261021110543.png)
