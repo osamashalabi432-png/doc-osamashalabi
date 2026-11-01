@@ -72,9 +72,12 @@ tcpdump -i any -nn udp port 514
 - can the collector reach the supervisor in azure: ***ADMIN → Settings → System → Cluster Config***
 
 
-i need all the filter for that include all the change behavior of user (Event type)
-fsm-coll-01 Event Status Critical need to be check
-i need to check the rules of Performance under Application
+prepared:
+1. fsm-coll-01 Event Status Critical need to be check 
+2. i need all the filter for that include all the change behavior of user (Event type)
+3. 
+
+need work:
 Machine Learning Jobs
 ReportAI
 Watch Lists
