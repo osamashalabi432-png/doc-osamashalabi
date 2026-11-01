@@ -38,13 +38,13 @@ make sure these are correct:
 curl -sI https://hole.cert.pl/domains/v2/domains.csv
 ```
 
-| List                  | Pick                            | Why                                                                               |
-| --------------------- | ------------------------------- | --------------------------------------------------------------------------------- |
-| **Malware Domains**   | **Tweetfeed Malware Domain**    | Free and global                                                                   |
-| **Malware IPs**       | **Emerging Threat Malware IP**  | Free, low false alarms, matches firewall logs                                     |
-| **Malware Hash**      | **Malware Bazaar Malware Hash** | Free, large, daily                                                                |
-| **Malware URLs**      | **URLHaus Malware URL** ✅       | Free (abuse.ch, same people as Malware Bazaar), focused on malware download links |
-| **Malware Processes** | **None for now**                | See below                                                                         |
+| List                  | Pick                            | Why                                                                               |     |
+| --------------------- | ------------------------------- | --------------------------------------------------------------------------------- | --- |
+| **Malware Domains**   | **Tweetfeed Malware Domain**    | Free and global                                                                   |     |
+| **Malware IPs**       | **Emerging Threat Malware IP**  | Free, low false alarms, matches firewall logs                                     |     |
+| **Malware Hash**      | **Malware Bazaar Malware Hash** | Free, large, daily                                                                |     |
+| **Malware URLs**      | **URLHaus Malware URL** ✅       | Free (abuse.ch, same people as Malware Bazaar), focused on malware download links |     |
+| **Malware Processes** | **None for now**                | See below                                                                         |     |
 
 ---
 ### Check collector
