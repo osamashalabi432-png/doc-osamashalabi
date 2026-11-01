@@ -48,3 +48,12 @@ For each Collector, check:
 ### Confirm logs are actually arriving
 
 - Go to **ANALYTICS** and run a search for the **last 10–15 minutes** with no filter.
+
+---
+### Is there any logs arriving? 
+```bash 
+tcpdump -i any -nn udp port 514
+```
+
+- can the collector reach the supervisor in azure: ***ADMIN → Settings → System → Cluster Config***
+- 
