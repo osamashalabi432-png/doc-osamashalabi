@@ -34,6 +34,10 @@ make sure these are correct:
 2. CPU, memory and disk should not be close to full
 3. EPS (Event per second) should be above zero
 
+```
+curl -sI https://hole.cert.pl/domains/v2/domains.csv
+```
+
 ---
 ### Check collector
 
