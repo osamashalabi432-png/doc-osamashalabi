@@ -83,6 +83,17 @@ curl -H "Authorization: Bearer <API-KEY>" \
   https://api.meraki.com/api/v1/organizations/<ORG-ID>/configurationChanges
 ```
 
+
+#### Step 3: Set it up in FortiSIEM
+
+Go to **ADMIN → Setup → Credentials → New**
+
+- **Device Type:** Generic → **HTTPS Advanced** (Generic Log API Poller)
+- **URL:** the configurationChanges URL from Step 2
+- **Header:** `Authorization: Bearer <API-KEY>`
+- **Pull interval:** 5 minutes
+
+
 ### ✏️ 1. General Parameters
 
 - **Host / Server:** `api.meraki.com`
