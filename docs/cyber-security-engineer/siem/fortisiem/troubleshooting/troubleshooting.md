@@ -77,12 +77,18 @@ prepared:
 2. i need all the filter for that include all the change behavior of user (Event type)
 3. ReportAI
 4. Machine Learning Jobs
+5. Watch Lists
+6. take all backup of configuration
 
 need work:
-Watch Lists
 Lookup Tables
-take all backup of configuration
 
+
+
+---
+```bash
+ls -lh --time-style=long-iso /data/archive/cmdb
+```
 ---
 # How to make an administrator changes appear in FortiSIEM
 #### Step 1: Get a Meraki API key
