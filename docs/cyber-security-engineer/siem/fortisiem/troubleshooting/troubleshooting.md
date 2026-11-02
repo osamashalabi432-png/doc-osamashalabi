@@ -79,9 +79,10 @@ prepared:
 4. Machine Learning Jobs
 5. Watch Lists
 6. take all backup of configuration
+7. Lookup Tables
 
 need work:
-Lookup Tables
+
 
 
 
