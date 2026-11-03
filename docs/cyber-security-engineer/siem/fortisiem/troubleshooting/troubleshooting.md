@@ -73,13 +73,10 @@ tcpdump -i any -nn udp port 514
 
 
 prepared:
-1. fsm-coll-01 Event Status Critical need to be check 
-2. i need all the filter for that include all the change behavior of user (Event type)
-3. ReportAI
-4. Machine Learning Jobs
-5. Watch Lists
-6. take all backup of configuration
-7. Lookup Tables
+1. i need all the filter for that include all the change behavior of user (Event type)
+2. ReportAI
+3. Watch Lists
+4. Lookup Tables
 
 need work:
 
