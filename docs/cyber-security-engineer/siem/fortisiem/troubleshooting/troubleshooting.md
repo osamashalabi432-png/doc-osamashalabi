@@ -79,6 +79,14 @@ prepared:
 4. Lookup Tables
 
 
+need work:
+1. FQDN
+2. Dashboard
+3. Analytics
+4. Incidents
+5. Tasks
+6. Cases
+
 ---
 # How to make an administrator changes appear in FortiSIEM
 #### Step 1: Get a Meraki API key
