@@ -78,15 +78,7 @@ prepared:
 3. Watch Lists
 4. Lookup Tables
 
-need work:
 
-
-
-
----
-```bash
-ls -lh --time-style=long-iso /data/archive/cmdb
-```
 ---
 # How to make an administrator changes appear in FortiSIEM
 #### Step 1: Get a Meraki API key
