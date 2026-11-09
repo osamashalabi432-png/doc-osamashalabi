@@ -1,4 +1,4 @@
-### collector problem:
+what ### collector problem:
 - check the collector
 ```bash
 phstatus
